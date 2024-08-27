@@ -78,6 +78,7 @@ body {
 
 .style-a-categories {
   font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
   color: black;
 }
@@ -88,7 +89,7 @@ body {
 
 .img-background {
   width: 100%;
-  height: 80vh;
+  height: 80.9vh;
   background-image: url(img/main_wood.jpg);
   background-size: cover;
   background-position: center;
@@ -99,14 +100,145 @@ body {
 }
 
 .cont-info {
-  width: 100%; /* Уменьшаем ширину на мобильных устройствах */
-  max-width: 54%; /* Ограничиваем максимальную ширину */
+  width: 100%;
+  max-width: 54%;
   height: 52%;
+  padding: 2%;
   background-color: rgba(1, 1, 1, 0.7);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   border-radius: 15px;
+}
+
+.text-info-main {
+  margin-top: 5%;
+  font-size: 50px;
+  color: white;
+}
+
+.text-info-small {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 25px;
+  color: white;
+}
+
+.products-background {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; /* Добавляем flex-колонку, чтобы элементы располагались вертикально */
+  align-items: center; /* Центрирование по горизонтали */
+  padding: 0px;
+}
+
+.product-text {
+  font-size: 30px; /* Задайте желаемый размер шрифта */
+  text-align: center; /* Центрирование текста внутри элемента */
+  margin-top: 50px;
+}
+
+.div-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 80px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: whitesmoke;
+  border-radius: 5%;
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Центрирование текста по горизонтали */
+  padding: 20px; /* Добавляем внутренние отступы */
+  position: relative; /* Для возможности абсолютного позиционирования внутри */
+}
+
+.card:hover {
+  background-color: rgba(195, 192, 192, 0.1);
+}
+
+.pr-text-main {
+  font-size: 30px;
+  margin-top: 5px; /* Отступ между заголовком и описанием */
+}
+
+.pr-text-description {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.parametr-img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto; /* Центрируем изображение по горизонтали */
+}
+
+.hover-image-scale {
+  display: inline-block;
+}
+
+.hover-image-scale img {
+  transition: 1.5s;
+  display: block;
+  margin: 0 auto; /* Центрируем изображение по горизонтали */
+}
+
+.hover-image-scale img:hover {
+  transform: scale(1.2);
+}
+
+.extra-text {
+  font-size: 15px;
+  margin-top: 20px; /* Отступ между заголовком и описанием */
+}
+
+/* Медиазапросы для устройств с шириной экрана 1060px и меньше */
+@media (max-width: 1070px) {
+  .div-cards {
+    flex-direction: row; /* Горизонтальное расположение карточек */
+    flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    gap: 20px; /* Увеличиваем расстояние между карточками */
+    margin-top: 30px; /* Увеличиваем верхний отступ */
+  }
+
+  .card {
+    width: 45%; /* Устанавливаем ширину карточек для размещения двух в строке */
+    height: auto; /* Автоматическая высота */
+    border-radius: 15px; /* Немного уменьшаем радиус */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+    transition: all 0.3s ease; /* Плавный переход для изменения размера и отступов */
+  }
+
+  .pr-text-main {
+    font-size: 26px; /* Уменьшаем размер шрифта заголовка */
+  }
+
+  .pr-text-description {
+    font-size: 18px; /* Уменьшаем размер шрифта описания */
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .parametr-img {
+    width: 160px; /* Уменьшаем размер изображения */
+    height: 160px;
+  }
+
+  .extra-text {
+    font-size: 16px; /* Уменьшаем размер шрифта дополнительного текста */
+    margin-top: 15px; /* Уменьшаем верхний отступ */
+  }
 }
 
 /* Медиазапросы для устройств с шириной экрана 768px и меньше */
@@ -152,8 +284,43 @@ body {
 
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
-    max-width: 34%; /* Ограничиваем максимальную ширину */
-    height: 32%;
+    max-width: 60%; /* Ограничиваем максимальную ширину */
+    height: 42%;
+  }
+
+  .div-cards {
+    flex-direction: row; /* Горизонтальное расположение карточек */
+    flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    gap: 10px; /* Уменьшаем расстояние между карточками */
+    margin-top: 20px; /* Уменьшаем верхний отступ */
+  }
+
+  .card {
+    width: 45%; /* Устанавливаем ширину карточек для размещения двух в строке */
+    height: auto; /* Автоматическая высота */
+    border-radius: 10%; /* Немного уменьшаем радиус */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .pr-text-main {
+    font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+  }
+
+  .pr-text-description {
+    font-size: 16px; /* Уменьшаем размер шрифта описания */
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .parametr-img {
+    width: 140px; /* Уменьшаем размер изображения */
+    height: 140px;
+  }
+
+  .extra-text {
+    font-size: 14px; /* Уменьшаем размер шрифта дополнительного текста */
+    margin-top: 15px; /* Уменьшаем верхний отступ */
   }
 }
 
@@ -175,9 +342,38 @@ body {
   .style-a-categories {
     font-size: 14px; /* Еще больше уменьшаем шрифт */
   }
+
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
-    max-width: 34%; /* Ограничиваем максимальную ширину */
-    height: 32%;
+    max-width: 60%; /* Ограничиваем максимальную ширину */
+    height: 42%;
+  }
+
+  .div-cards {
+    flex-direction: column; /* Возвращаем вертикальное расположение на очень маленьких экранах */
+    align-items: center;
+    gap: 15px; /* Увеличиваем расстояние между карточками */
+  }
+
+  .card {
+    width: 90%; /* Уменьшаем ширину карточек */
+    padding: 10px; /* Уменьшаем внутренние отступы */
+  }
+
+  .pr-text-main {
+    font-size: 20px; /* Уменьшаем размер шрифта заголовка */
+  }
+
+  .pr-text-description {
+    font-size: 14px; /* Уменьшаем размер шрифта описания */
+  }
+
+  .parametr-img {
+    width: 120px; /* Уменьшаем размер изображения */
+    height: 120px;
+  }
+
+  .extra-text {
+    font-size: 12px; /* Уменьшаем размер шрифта дополнительного текста */
   }
 }
