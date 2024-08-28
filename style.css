@@ -10,6 +10,7 @@ body {
   height: 100%; /* Устанавливаем высоту для html и body */
   margin: 0;
   overflow-x: hidden; /* Предотвращаем горизонтальную прокрутку */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
 .navbar-info {
   width: 100%;
-  height: 70px;
+  height: 10%;
   background-color: rgb(240, 240, 240);
   display: flex;
   align-items: center;
@@ -69,7 +70,7 @@ body {
 
 .navbar-categories {
   width: 100%;
-  height: 70px;
+  height: 10%;
   background-color: rgb(230, 230, 230);
   display: flex;
   justify-content: center; /* Центрирование по горизонтали */
@@ -96,7 +97,7 @@ body {
 
 .img-background {
   width: 100%;
-  height: 80.9vh;
+  height: 80vh;
   background-image: url(img/main_wood.jpg);
   background-size: cover;
   background-position: center;
@@ -133,11 +134,11 @@ body {
 
 .products-background {
   width: 100%;
-  height: 80vh;
-  background-color: white;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center;
+  background-repeat: no-repeat; */
   display: flex;
   flex-direction: column; /* Добавляем flex-колонку, чтобы элементы располагались вертикально */
   align-items: center; /* Центрирование по горизонтали */
@@ -146,8 +147,12 @@ body {
 
 .product-text {
   font-size: 30px; /* Задайте желаемый размер шрифта */
-  text-align: center; /* Центрирование текста внутри элемента */
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+.product-text-additional {
+  font-size: 20px; /* Задайте желаемый размер шрифта */
+  margin-top: 10px;
 }
 
 .div-cards {
@@ -163,14 +168,14 @@ body {
   height: 400px;
   background-color: whitesmoke;
   border-radius: 5%;
-  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 10px rgba(98, 98, 98, 0.1);
   text-align: center; /* Центрирование текста по горизонтали */
   padding: 20px; /* Добавляем внутренние отступы */
   position: relative; /* Для возможности абсолютного позиционирования внутри */
 }
 
 .card:hover {
-  background-color: rgba(195, 192, 192, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .pr-text-main {
@@ -207,6 +212,26 @@ body {
 .extra-text {
   font-size: 15px;
   margin-top: 20px; /* Отступ между заголовком и описанием */
+}
+
+.product-text-additional-end {
+  font-size: 20px; /* Задайте желаемый размер шрифта */
+  text-align: center; /* Центрирование текста внутри элемента */
+  margin-top: 40px;
+}
+
+.info-company-background {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(7, 59, 17);
+  display: flex;
+  justify-content: center;
+}
+
+.info-company-text {
+  font-size: 30px; /* Задайте желаемый размер шрифта */
+  margin-top: 40px;
+  color: white;
 }
 
 /* Медиазапросы для устройств с шириной экрана 1060px и меньше */

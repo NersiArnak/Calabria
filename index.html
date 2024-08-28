@@ -13,7 +13,9 @@
   <body>
     <div class="navbar-info">
       <div class="img-block">
-        <img class="img-logo" src="img/arnak.png" alt="error logo" />
+        <a href="index.html">
+          <img class="img-logo" src="img/arnak.png" alt="error logo" />
+        </a>
       </div>
       <div class="block-container">
         <div class="element-position">
@@ -30,10 +32,10 @@
     </div>
     <div class="navbar-categories">
       <div class="block-categories">
-        <a class="style-a-categories" href="#">Наша продукция</a>
-        <a class="style-a-categories" href="#">Прайс-листы</a>
-        <a class="style-a-categories" href="#">Сертификаты</a>
-        <a class="style-a-categories" href="#">О компании</a>
+        <a class="style-a-categories" href="#headerProducts">Наша продукция</a>
+        <a class="style-a-categories" href="price-list.html">Прайс-листы</a>
+        <a class="style-a-categories" href="сertificates.html">Сертификаты</a>
+        <a class="style-a-categories" href="#headerInfoCompany">О компании</a>
         <a class="style-a-categories" href="#">Контакты</a>
       </div>
     </div>
@@ -44,7 +46,8 @@
       </div>
     </div>
     <div class="products-background">
-      <p class="product-text">Наша продукция</p>
+      <h1 id="headerProducts" class="product-text">Наша продукция</h1>
+      <p class="product-text-additional">Доп текст</p>
       <div class="div-cards">
         <div class="card">
           <p class="pr-text-main">Продукция №1</p>
@@ -83,6 +86,11 @@
           <p class="extra-text">Доп текст</p>
         </div>
       </div>
+      <p class="product-text-additional-end">Доп текст</p>
+    </div>
+
+    <div class="info-company-background">
+      <h1 id="headerInfoCompany" class="info-company-text">Контакты</h1>
     </div>
   </body>
 </html>
