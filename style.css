@@ -23,12 +23,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; /* Распределяем элементы */
-  padding: 0 20px;
-  position: relative;
+  padding: 20px;
+}
+
+.img-block {
+  display: flex;
+  gap: 20px;
 }
 
 .img-logo {
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
   height: auto;
 }
 
@@ -73,11 +80,11 @@ body {
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center;
-  gap: 20px; /* Уменьшаем расстояние между элементами */
+  gap: 25px; /* Уменьшаем расстояние между элементами */
 }
 
 .style-a-categories {
-  font-size: 22px;
+  font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
   color: black;
@@ -250,13 +257,12 @@ body {
   }
 
   .block-container {
-    flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 25px;
   }
 
   .img-logo {
-    width: 70px;
+    width: 150px;
   }
 
   .style-a {
