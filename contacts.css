@@ -1,0 +1,395 @@
+/* Сброс стилей и базовые настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Включаем отступы и границы в ширину и высоту */
+}
+
+html,
+body {
+  height: 100%; /* Устанавливаем высоту для html и body */
+  margin: 0;
+  overflow-x: hidden; /* Предотвращаем горизонтальную прокрутку */
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: auto; /* Разрешаем вертикальную прокрутку при необходимости */
+}
+
+.navbar-info {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределяем элементы */
+  padding: 20px;
+}
+
+.img-block {
+  display: flex;
+  gap: 20px;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: auto;
+}
+
+.block-container {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.img-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.style-a {
+  margin-left: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.style-a:hover {
+  color: rgb(82, 81, 81);
+}
+
+.navbar-categories {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;
+}
+
+.block-categories {
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center;
+  gap: 25px; /* Уменьшаем расстояние между элементами */
+}
+
+.style-a-categories {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: black;
+}
+
+.style-a-flag {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+}
+
+.style-a-categories:hover {
+  color: rgb(156, 156, 156);
+}
+
+.info-contacts-background {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(39, 52, 38);
+}
+
+.title-name-contacts {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.info-address1 {
+  width: 70%;
+  height: auto;
+  background-color: rgba(1, 1, 1, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.info-address2 {
+  width: 70%;
+  height: 35%;
+  background-color: rgba(1, 1, 1, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.text-info-main {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+
+.text-info-extra {
+  font-size: 18px;
+  margin-top: 5px;
+  color: rgb(205, 205, 205);
+  text-decoration: none;
+}
+
+@media (max-width: 1350px) {
+  .text-info-main {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+  }
+
+  .text-info-extra {
+    font-size: 16px;
+    margin-top: 5px;
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .text-info-main {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+  }
+
+  .text-info-extra {
+    font-size: 16px;
+    margin-top: 5px;
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 970px) {
+  .text-info-main {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+  }
+
+  .text-info-extra {
+    font-size: 13px;
+    margin-top: 5px;
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .block-container {
+    margin-top: 10px;
+    gap: 25px;
+  }
+
+  .img-logo {
+    width: 140px;
+  }
+
+  .style-a {
+    font-size: 12px;
+  }
+
+  .img-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .navbar-categories {
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    padding: 14px; /* Добавляем вертикальные отступы */
+  }
+
+  .block-categories {
+    gap: 10px;
+  }
+
+  .style-a-categories {
+    font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .style-a-flag {
+    font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .title-name-contacts {
+    font-size: 25px;
+  }
+
+  .info-address1 {
+    width: 90%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .info-address2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .text-info-main {
+    font-size: 12px;
+  }
+
+  .text-info-extra {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 499px) {
+  .title-name-contacts {
+    font-size: 25px;
+  }
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .block-container {
+    margin-top: 10px;
+    gap: 25px;
+  }
+
+  .img-logo {
+    width: 140px;
+  }
+
+  .style-a {
+    font-size: 12px;
+  }
+
+  .img-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .navbar-categories {
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    padding: 14px; /* Добавляем вертикальные отступы */
+  }
+
+  .block-categories {
+    gap: 10px;
+  }
+
+  .style-a-categories {
+    font-size: 11px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .style-a-flag {
+    font-size: 11px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .info-address1 {
+    width: 90%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .info-address2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .text-info-main {
+    font-size: 10px;
+  }
+
+  .text-info-extra {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-name-contacts {
+    font-size: 25px;
+  }
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .block-container {
+    margin-top: 10px;
+    gap: 25px;
+  }
+
+  .img-logo {
+    width: 140px;
+  }
+
+  .style-a {
+    font-size: 12px;
+  }
+
+  .img-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .navbar-categories {
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    padding: 12px; /* Добавляем вертикальные отступы */
+  }
+
+  .block-categories {
+    gap: 8px;
+  }
+
+  .style-a-categories {
+    font-size: 9px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .style-a-flag {
+    font-size: 9px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .info-address1 {
+    width: 90%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .info-address2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .text-info-main {
+    font-size: 10px;
+  }
+
+  .text-info-extra {
+    font-size: 8px;
+  }
+}
