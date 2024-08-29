@@ -234,7 +234,6 @@ body {
   color: white;
 }
 
-/* Медиазапросы для устройств с шириной экрана 1060px и меньше */
 @media (max-width: 1070px) {
   .div-cards {
     flex-direction: row; /* Горизонтальное расположение карточек */
@@ -273,7 +272,6 @@ body {
   }
 }
 
-/* Медиазапросы для устройств с шириной экрана 768px и меньше */
 @media (max-width: 768px) {
   .navbar-info {
     flex-direction: column;

@@ -142,13 +142,11 @@ body {
 
 .text-info-main {
   font-size: 25px;
-  margin-bottom: 5px;
   color: whitesmoke;
 }
 
 .text-info-extra {
   font-size: 18px;
-  margin-top: 5px;
   text-decoration: none;
   color: rgb(205, 205, 205);
 }
