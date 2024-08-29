@@ -150,7 +150,6 @@ body {
   font-size: 18px;
   margin-top: 5px;
   color: rgb(205, 205, 205);
-  text-decoration: none;
 }
 
 @media (max-width: 1350px) {
@@ -164,7 +163,6 @@ body {
     font-size: 16px;
     margin-top: 5px;
     color: rgb(205, 205, 205);
-    text-decoration: none;
   }
 }
 
@@ -179,7 +177,6 @@ body {
     font-size: 16px;
     margin-top: 5px;
     color: rgb(205, 205, 205);
-    text-decoration: none;
   }
 }
 
@@ -194,7 +191,6 @@ body {
     font-size: 13px;
     margin-top: 5px;
     color: rgb(205, 205, 205);
-    text-decoration: none;
   }
 }
 
@@ -261,7 +257,6 @@ body {
 
   .text-info-extra {
     font-size: 10px;
-    text-decoration: none;
     color: white;
   }
 }
@@ -323,12 +318,12 @@ body {
   }
 
   .text-info-main {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .text-info-extra {
-    font-size: 10px;
-    text-decoration: none;
+    font-size: 8px;
+
     color: white;
   }
 }
@@ -395,7 +390,6 @@ body {
 
   .text-info-extra {
     font-size: 8px;
-    text-decoration: none;
     color: white;
   }
 }
