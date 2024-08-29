@@ -261,6 +261,8 @@ body {
 
   .text-info-extra {
     font-size: 10px;
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -321,11 +323,13 @@ body {
   }
 
   .text-info-main {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .text-info-extra {
-    font-size: 8px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -391,5 +395,7 @@ body {
 
   .text-info-extra {
     font-size: 8px;
+    text-decoration: none;
+    color: white;
   }
 }
