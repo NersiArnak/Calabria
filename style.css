@@ -309,7 +309,7 @@ body {
   }
 
   .style-a-categories {
-    font-size: 11px; /* Уменьшаем шрифт для мобильных устройств */
+    font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
   }
 
   .cont-info {
@@ -370,7 +370,7 @@ body {
   margin-top: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 499px) {
   .navbar-info {
     flex-direction: column;
     height: auto;
@@ -497,12 +497,11 @@ body {
   }
 
   .block-categories {
-    gap: 10px;
+    gap: 8px;
   }
 
   .style-a-categories {
-    font-size: 8px; /* Уменьшаем шрифт для мобильных устройств */
-    font-weight: bold;
+    font-size: 9px; /* Уменьшаем шрифт для мобильных устройств */
   }
 
   .cont-info {
