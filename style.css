@@ -502,6 +502,7 @@ body {
 
   .style-a-categories {
     font-size: 9px; /* Уменьшаем шрифт для мобильных устройств */
+    font-weight: bold;
   }
 
   .cont-info {
