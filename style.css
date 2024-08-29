@@ -92,7 +92,7 @@ body {
 }
 
 .style-a-categories:hover {
-  color: rgb(100, 100, 100);
+  color: rgb(119, 118, 118);
 }
 
 .img-background {
@@ -282,16 +282,16 @@ body {
   }
 
   .block-container {
-    align-items: flex-start;
+    margin-top: 10px;
     gap: 25px;
   }
 
   .img-logo {
-    width: 150px;
+    width: 140px;
   }
 
   .style-a {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .img-icon {
@@ -301,110 +301,71 @@ body {
 
   .navbar-categories {
     height: auto; /* Автоматическая высота для мобильных устройств */
-    padding: 10px 0; /* Добавляем вертикальные отступы */
+    padding: 14px; /* Добавляем вертикальные отступы */
   }
 
   .block-categories {
-    flex-direction: column;
-    gap: 10px;
+    gap: 16px;
   }
 
   .style-a-categories {
-    font-size: 16px; /* Уменьшаем шрифт для мобильных устройств */
+    font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
   }
 
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 60%; /* Ограничиваем максимальную ширину */
     height: 42%;
+  }
+
+  .product-text {
+    font-size: 25px; /* Задайте желаемый размер шрифта */
+    margin-top: 25px;
+  }
+
+  .product-text-additional {
+    font-size: 18px; /* Задайте желаемый размер шрифта */
+    margin-top: 5px;
   }
 
   .div-cards {
     flex-direction: row; /* Горизонтальное расположение карточек */
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
     justify-content: center; /* Центрируем карточки по горизонтали */
-    gap: 10px; /* Уменьшаем расстояние между карточками */
-    margin-top: 20px; /* Уменьшаем верхний отступ */
+    gap: 30px; /* Уменьшаем расстояние между карточками */
+    margin-top: 35px; /* Уменьшаем верхний отступ */
   }
 
   .card {
-    width: 45%; /* Устанавливаем ширину карточек для размещения двух в строке */
+    width: 40%; /* Устанавливаем ширину карточек для размещения двух в строке */
     height: auto; /* Автоматическая высота */
     border-radius: 10%; /* Немного уменьшаем радиус */
     padding: 15px; /* Уменьшаем внутренние отступы */
   }
 
   .pr-text-main {
-    font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+    font-size: 18px; /* Уменьшаем размер шрифта заголовка */
   }
 
   .pr-text-description {
-    font-size: 16px; /* Уменьшаем размер шрифта описания */
+    font-size: 14px; /* Уменьшаем размер шрифта описания */
     margin-top: 5px;
     margin-bottom: 15px;
   }
 
   .parametr-img {
-    width: 140px; /* Уменьшаем размер изображения */
-    height: 140px;
-  }
-
-  .extra-text {
-    font-size: 14px; /* Уменьшаем размер шрифта дополнительного текста */
-    margin-top: 15px; /* Уменьшаем верхний отступ */
-  }
-}
-
-/* Медиазапросы для устройств с шириной экрана 480px и меньше */
-@media (max-width: 480px) {
-  .img-logo {
-    width: 50px; /* Уменьшаем логотип еще больше */
-  }
-
-  .style-a {
-    font-size: 14px;
-  }
-
-  .img-icon {
-    width: 12px;
-    height: 12px;
-  }
-
-  .style-a-categories {
-    font-size: 14px; /* Еще больше уменьшаем шрифт */
-  }
-
-  .cont-info {
-    width: 100%; /* Уменьшаем ширину на мобильных устройствах */
-    max-width: 60%; /* Ограничиваем максимальную ширину */
-    height: 42%;
-  }
-
-  .div-cards {
-    flex-direction: column; /* Возвращаем вертикальное расположение на очень маленьких экранах */
-    align-items: center;
-    gap: 15px; /* Увеличиваем расстояние между карточками */
-  }
-
-  .card {
-    width: 90%; /* Уменьшаем ширину карточек */
-    padding: 10px; /* Уменьшаем внутренние отступы */
-  }
-
-  .pr-text-main {
-    font-size: 20px; /* Уменьшаем размер шрифта заголовка */
-  }
-
-  .pr-text-description {
-    font-size: 14px; /* Уменьшаем размер шрифта описания */
-  }
-
-  .parametr-img {
-    width: 120px; /* Уменьшаем размер изображения */
-    height: 120px;
+    width: 100px; /* Уменьшаем размер изображения */
+    height: 100px;
   }
 
   .extra-text {
     font-size: 12px; /* Уменьшаем размер шрифта дополнительного текста */
+    margin-top: 8px; /* Уменьшаем верхний отступ */
   }
+}
+
+.product-text-additional-end {
+  font-size: 14px; /* Задайте желаемый размер шрифта */
+  text-align: center; /* Центрирование текста внутри элемента */
+  margin-top: 30px;
 }
