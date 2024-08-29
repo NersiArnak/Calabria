@@ -411,7 +411,7 @@ body {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: auto;
+    height: 42%;
   }
 
   .product-text {
