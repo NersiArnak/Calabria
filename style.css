@@ -369,3 +369,99 @@ body {
   text-align: center; /* Центрирование текста внутри элемента */
   margin-top: 30px;
 }
+
+@media (max-width: 450px) {
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .block-container {
+    margin-top: 10px;
+    gap: 25px;
+  }
+
+  .img-logo {
+    width: 140px;
+  }
+
+  .style-a {
+    font-size: 12px;
+  }
+
+  .img-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .navbar-categories {
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    padding: 14px; /* Добавляем вертикальные отступы */
+  }
+
+  .block-categories {
+    gap: 10px;
+  }
+
+  .style-a-categories {
+    font-size: 11px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .cont-info {
+    width: 100%; /* Уменьшаем ширину на мобильных устройствах */
+    max-width: 80%; /* Ограничиваем максимальную ширину */
+    height: auto;
+  }
+
+  .product-text {
+    font-size: 25px; /* Задайте желаемый размер шрифта */
+    margin-top: 25px;
+  }
+
+  .product-text-additional {
+    font-size: 18px; /* Задайте желаемый размер шрифта */
+    margin-top: 5px;
+  }
+
+  .div-cards {
+    flex-direction: row; /* Горизонтальное расположение карточек */
+    flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    gap: 30px; /* Уменьшаем расстояние между карточками */
+    margin-top: 35px; /* Уменьшаем верхний отступ */
+  }
+
+  .card {
+    width: 40%; /* Устанавливаем ширину карточек для размещения двух в строке */
+    height: auto; /* Автоматическая высота */
+    border-radius: 10%; /* Немного уменьшаем радиус */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .pr-text-main {
+    font-size: 18px; /* Уменьшаем размер шрифта заголовка */
+  }
+
+  .pr-text-description {
+    font-size: 14px; /* Уменьшаем размер шрифта описания */
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .parametr-img {
+    width: 100px; /* Уменьшаем размер изображения */
+    height: 100px;
+  }
+
+  .extra-text {
+    font-size: 12px; /* Уменьшаем размер шрифта дополнительного текста */
+    margin-top: 8px; /* Уменьшаем верхний отступ */
+  }
+}
+
+.product-text-additional-end {
+  font-size: 14px; /* Задайте желаемый размер шрифта */
+  text-align: center; /* Центрирование текста внутри элемента */
+  margin-top: 30px;
+}
