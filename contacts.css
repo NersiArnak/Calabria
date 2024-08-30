@@ -10,7 +10,6 @@ body {
   height: 100%; /* Устанавливаем высоту для html и body */
   margin: 0;
   overflow-x: hidden; /* Предотвращаем горизонтальную прокрутку */
-  scroll-behavior: smooth;
 }
 
 body {
@@ -139,7 +138,6 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
 }
 
 .extra-address2 {
@@ -167,18 +165,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
 }
 
 #map {
   width: 100%; /* Задает ширину карты */
   height: 100%; /* Задает высоту карты */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Закругление углов */
+  overflow: hidden; /* Скрывает содержимое, выходящее за границы */
+}
+
+.main-text-map {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
 }
 
 .text-map {
   color: white;
   font-size: 25px;
   margin-top: 20px;
+}
+
+.text-map-extra {
+  color: rgb(205, 205, 205);
+  font-size: 18px;
+  margin-top: 5px;
   margin-bottom: 40px;
 }
 
@@ -266,7 +278,8 @@ body {
   }
 
   .title-name-contacts {
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: 25px;
   }
 
   .info-address1 {
@@ -276,7 +289,6 @@ body {
 
   .info-address2 {
     width: 90%;
-    margin-bottom: 25px;
   }
 
   .text-info-main {
@@ -299,10 +311,21 @@ body {
     height: 220px;
   }
 
+  .main-text-map {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
   .text-map {
     font-size: 13px;
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+  }
+
+  .text-map-extra {
+    font-size: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -351,6 +374,11 @@ body {
     font-size: 11px; /* Уменьшаем шрифт для мобильных устройств */
   }
 
+  .title-name-contacts {
+    font-size: 20px;
+    margin-top: 22px;
+  }
+
   .info-address1 {
     width: 90%;
     height: auto;
@@ -362,7 +390,6 @@ body {
   .info-address2 {
     width: 90%;
     height: auto;
-    margin-bottom: 20px;
     padding: 15px;
   }
 
@@ -379,10 +406,20 @@ body {
     height: 220px;
   }
 
+  .main-text-map {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
   .text-map {
     font-size: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .text-map-extra {
+    font-size: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -431,6 +468,11 @@ body {
     font-size: 9px; /* Уменьшаем шрифт для мобильных устройств */
   }
 
+  .title-name-contacts {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
   .info-address1 {
     width: 90%;
     height: auto;
@@ -457,9 +499,19 @@ body {
     height: 220px;
   }
 
+  .main-text-map {
+    font-size: 8px;
+    margin-top: 15px;
+  }
+
   .text-map {
     font-size: 8px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .text-map-extra {
+    font-size: 8px;
+    margin-top: 5px;
   }
 }
