@@ -104,7 +104,7 @@ body {
 
 .info-contacts-background {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -162,17 +162,24 @@ body {
 }
 
 .map-container {
-  width: 100%;
-  height: 80%;
+  width: 70%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #map {
-  width: 70%; /* Задает ширину карты */
-  height: 70%; /* Задает высоту карты */
+  width: 100%; /* Задает ширину карты */
+  height: 100%; /* Задает высоту карты */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-map {
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -187,6 +194,13 @@ body {
     margin-top: 5px;
     color: rgb(205, 205, 205);
   }
+
+  .text-map {
+    color: white;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 970px) {
@@ -200,6 +214,12 @@ body {
     font-size: 13px;
     margin-top: 5px;
     color: rgb(205, 205, 205);
+  }
+  .text-map {
+    color: white;
+    font-size: 14.5px;
+    margin-top: 15px;
+    margin-bottom: 40px;
   }
 }
 
@@ -251,13 +271,12 @@ body {
 
   .info-address1 {
     width: 90%;
-    height: auto;
-    gap: 20px;
+    margin-bottom: 25px;
   }
 
   .info-address2 {
     width: 90%;
-    height: auto;
+    margin-bottom: 25px;
   }
 
   .text-info-main {
@@ -273,6 +292,17 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
+  }
+
+  .map-container {
+    width: 90%;
+    height: 220px;
+  }
+
+  .text-map {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 40px;
   }
 }
 
@@ -324,14 +354,16 @@ body {
   .info-address1 {
     width: 90%;
     height: auto;
+    margin-bottom: 20px;
     gap: 10px;
-    padding: 10px;
+    padding: 15px;
   }
 
   .info-address2 {
     width: 90%;
     height: auto;
-    padding: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
   }
 
   .text-info-main {
@@ -341,6 +373,16 @@ body {
 
   .text-info-extra {
     font-size: 10px;
+  }
+  .map-container {
+    width: 90%;
+    height: 220px;
+  }
+
+  .text-map {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -392,12 +434,14 @@ body {
   .info-address1 {
     width: 90%;
     height: auto;
+    margin-bottom: 20px;
     gap: 20px;
   }
 
   .info-address2 {
     width: 90%;
     height: auto;
+    margin-bottom: 20px;
   }
 
   .text-info-main {
@@ -407,5 +451,15 @@ body {
 
   .text-info-extra {
     font-size: 8px;
+  }
+  .map-container {
+    width: 90%;
+    height: 220px;
+  }
+
+  .text-map {
+    font-size: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
