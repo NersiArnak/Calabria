@@ -207,15 +207,36 @@ body {
     color: rgb(205, 205, 205);
   }
 
-  .text-map {
+  .title-name-contacts {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .main-text-map {
     color: white;
     font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 2px;
+  }
+
+  .text-map {
+    font-size: 21px;
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+  }
+
+  .text-map-extra {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 970px) {
+  .info-address1 {
+    margin-bottom: 25px;
+  }
+
   .text-info-main {
     font-size: 14.5px;
     margin-bottom: 5px;
@@ -227,11 +248,29 @@ body {
     margin-top: 5px;
     color: rgb(205, 205, 205);
   }
-  .text-map {
+
+  .title-name-contacts {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .main-text-map {
     color: white;
     font-size: 14.5px;
+    margin-top: 25px;
+    margin-bottom: 2px;
+  }
+
+  .text-map {
+    font-size: 14.5px;
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+  }
+
+  .text-map-extra {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -314,7 +353,7 @@ body {
   .main-text-map {
     color: white;
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .text-map {
@@ -326,6 +365,7 @@ body {
   .text-map-extra {
     font-size: 10px;
     margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -408,7 +448,7 @@ body {
 
   .main-text-map {
     font-size: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   .text-map {
@@ -420,6 +460,7 @@ body {
   .text-map-extra {
     font-size: 10px;
     margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -501,7 +542,7 @@ body {
 
   .main-text-map {
     font-size: 8px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   .text-map {
@@ -513,5 +554,6 @@ body {
   .text-map-extra {
     font-size: 8px;
     margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
