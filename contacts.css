@@ -148,13 +148,6 @@ body {
   color: whitesmoke;
 }
 
-.text-info-a {
-  font-size: 18px;
-  margin-bottom: 0px;
-  color: rgb(205, 205, 205);
-  text-decoration: none;
-}
-
 .text-info-extra {
   font-size: 18px;
   margin-bottom: 5px;
@@ -248,7 +241,8 @@ body {
   }
 
   .text-info-main {
-    font-size: 12px;
+    font-size: 13px;
+    margin-bottom: 2px;
   }
 
   .text-info-extra {
@@ -304,7 +298,7 @@ body {
   .info-address1 {
     width: 90%;
     height: auto;
-    gap: 20px;
+    gap: 10px;
   }
 
   .info-address2 {
@@ -313,11 +307,12 @@ body {
   }
 
   .text-info-main {
-    font-size: 10px;
+    font-size: 11px;
+    margin-bottom: 2px;
   }
 
   .text-info-extra {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -379,6 +374,7 @@ body {
 
   .text-info-main {
     font-size: 10px;
+    margin-bottom: 2px;
   }
 
   .text-info-extra {
