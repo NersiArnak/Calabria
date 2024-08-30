@@ -77,6 +77,27 @@
           <a class="text-info-extra">ОГРН: 1247700555992</a>
         </div>
       </div>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+
+      <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+          var myMap = new ymaps.Map("map", {
+            center: [55.772502, 37.497486], // Координаты центра карты (например, Москва)
+            zoom: 10, // Масштаб карты
+          });
+
+          var myPlacemark = new ymaps.Placemark([55.772502, 37.497486], {
+            hintContent: "Москва!",
+            balloonContent: "Столица России",
+          });
+
+          myMap.geoObjects.add(myPlacemark);
+        }
+      </script>
     </div>
   </body>
 </html>
