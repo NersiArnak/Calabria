@@ -9,6 +9,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <div class="navbar-info">
@@ -61,16 +65,40 @@
       </div>
 
       <div class="info-address2">
-        <p class="text-info-main">Реквизиты компании ООО "Калабрия"</p>
-        <p class="text-info-extra">
-          Юридический адрес: 117216, г.Москва, Муниципальный Округ Северное
-          Бутово,
-        </p>
-        <p class="text-info-extra">ул Феодосийская, д. 1, к. 1</p>
-        <a class="text-info-extra">ИНН: 9727083302</a>
-        <a class="text-info-extra">КПП: 772701001</a>
-        <a class="text-info-extra">ОГРН: 1247700555992</a>
+        <div class="extra-address2">
+          <p class="text-info-main">Реквизиты компании ООО "Калабрия"</p>
+          <p class="text-info-extra">
+            Юридический адрес: 117216, г.Москва, Муниципальный Округ Северное
+            Бутово,
+          </p>
+          <p class="text-info-extra">ул Феодосийская, д. 1, к. 1</p>
+          <a class="text-info-extra">ИНН: 9727083302</a>
+          <a class="text-info-extra">КПП: 772701001</a>
+          <a class="text-info-extra">ОГРН: 1247700555992</a>
+        </div>
       </div>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+
+      <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+          var myMap = new ymaps.Map("map", {
+            center: [55.772502, 37.497486], // Координаты центра карты (например, Москва)
+            zoom: 10, // Масштаб карты
+          });
+
+          var myPlacemark = new ymaps.Placemark([55.772502, 37.497486], {
+            hintContent: "Москва!",
+            balloonContent: "Столица России",
+          });
+
+          myMap.geoObjects.add(myPlacemark);
+        }
+      </script>
     </div>
+    <!-- Другие элементы вашей страницы -->
   </body>
 </html>
