@@ -242,7 +242,6 @@ body {
 .button-characteristic:hover {
   background-color: rgb(66, 88, 64);
   font-size: 14px;
-  transition: 0.4s;
 }
 
 .product-text-additional-end {
@@ -438,6 +437,11 @@ body {
     margin-bottom: 10px;
   }
 
+  .button-characteristic:hover {
+    background-color: rgb(66, 88, 64);
+    font-size: 13px;
+  }
+
   .pr-text-main {
     font-size: 26px; /* Уменьшаем размер шрифта заголовка */
   }
@@ -495,6 +499,11 @@ body {
     height: 30px;
     font-size: 11px;
     margin-bottom: 7px;
+  }
+
+  .button-characteristic:hover {
+    background-color: rgb(66, 88, 64);
+    font-size: 12px;
   }
 }
 
@@ -732,7 +741,7 @@ body {
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
     justify-content: center; /* Центрируем карточки по горизонтали */
     gap: 30px; /* Уменьшаем расстояние между карточками */
-    margin-top: 28px; /* Уменьшаем верхний отступ */
+    margin-top: 20px; /* Уменьшаем верхний отступ */
   }
 
   .card {
@@ -748,12 +757,22 @@ body {
   .pr-text-description {
     font-size: 14px; /* Уменьшаем размер шрифта описания */
     margin-top: 5px;
-    margin-bottom: 15px;
   }
 
   .parametr-img {
-    width: 100px; /* Уменьшаем размер изображения */
+    width: 150px; /* Уменьшаем размер изображения */
     height: 100px;
+  }
+
+  .text-price-img {
+    font-size: 14px;
+  }
+
+  .button-characteristic {
+    width: 125px;
+    height: 28px;
+    font-size: 11px;
+    margin-bottom: 6px;
   }
 
   .extra-text {
