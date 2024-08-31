@@ -261,7 +261,7 @@ body {
 
 .info-company-text {
   font-size: 30px; /* Задайте желаемый размер шрифта */
-  margin-top: 30px;
+  margin-top: 40px;
   color: white;
 }
 
@@ -504,6 +504,46 @@ body {
     background-color: rgb(66, 88, 64);
     font-size: 11.5px;
   }
+
+  .info-address1 {
+    margin-bottom: 25px;
+  }
+
+  .text-info-main {
+    font-size: 14.5px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+  }
+
+  .text-info-extra {
+    font-size: 13px;
+    margin-top: 5px;
+    color: rgb(205, 205, 205);
+  }
+
+  .title-name-contacts {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .main-text-map {
+    color: white;
+    font-size: 14.5px;
+    margin-top: 25px;
+    margin-bottom: 2px;
+  }
+
+  .text-map {
+    font-size: 14.5px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .text-map-extra {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 820px) {
@@ -663,12 +703,21 @@ body {
 }
 
 @media (max-width: 700px) {
+  .products-background {
+    width: 100%;
+    height: auto;
+  }
+
   .div-cards {
     flex-direction: row; /* Горизонтальное расположение карточек */
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
     justify-content: center; /* Центрируем карточки по горизонтали */
     gap: 20px; /* Уменьшаем расстояние между карточками */
     margin-top: 30px; /* Уменьшаем верхний отступ */
+  }
+
+  .info-company-background {
+    height: auto;
   }
 }
 
