@@ -809,7 +809,7 @@ body {
   .title-name-contacts {
     font-size: 20px;
     margin-top: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .info-address1 {
@@ -853,7 +853,7 @@ body {
   .text-map-extra {
     font-size: 10px;
     margin-top: 5px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 }
 
