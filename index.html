@@ -9,6 +9,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <div class="navbar-info">
@@ -32,11 +36,10 @@
     </div>
     <div class="navbar-categories">
       <div class="block-categories">
-        <a class="style-a-categories" href="#headerProducts">Наша продукция</a>
+        <a class="style-a-flag" href="#headerProducts">Наша продукция</a>
         <a class="style-a-categories" href="price-list.html">Прайс-листы</a>
-        <a class="style-a-categories" href="сertificates.html">Сертификаты</a>
         <a class="style-a-categories" href="#headerInfoCompany">О компании</a>
-        <a class="style-a-categories" href="contacts.html">Контакты</a>
+        <a class="style-a-categories" href="#headerContacts">Контакты</a>
       </div>
     </div>
     <div class="img-background">
@@ -91,6 +94,64 @@
 
     <div id="headerInfoCompany" class="info-company-background">
       <h1 class="info-company-text">О компании</h1>
+    </div>
+    <div id="headerContacts" class="info-contacts-background">
+      <h1 class="title-name-contacts">Общая информация</h1>
+      <div class="info-address1">
+        <div>
+          <p class="text-info-main">Адрес производства📍</p>
+          <a class="text-info-extra">Кирилловское шоссе 80</a>
+        </div>
+        <div>
+          <p class="text-info-main">Контактный телефон ☎️</p>
+          <a class="text-info-extra" href="tel:+79969983010"
+            >+7 (996) 998-30-10</a
+          >
+        </div>
+        <div>
+          <p class="text-info-main">Рабочая почта 📮</p>
+          <a class="text-info-extra" href="mailto:info@calabriawood.ru"
+            >info@calabriawood.ru</a
+          >
+        </div>
+      </div>
+
+      <div class="info-address2">
+        <div class="extra-address2">
+          <p class="text-info-main">Реквизиты компании ООО "Калабрия"</p>
+          <p class="text-info-extra">
+            Юридический адрес: 117216, г.Москва, Муниципальный Округ Северное
+            Бутово,
+          </p>
+          <p class="text-info-extra">ул Феодосийская, д. 1, к. 1</p>
+          <a class="text-info-extra">ИНН: 9727083302</a>
+          <a class="text-info-extra">КПП: 772701001</a>
+          <a class="text-info-extra">ОГРН: 1247700555992</a>
+        </div>
+      </div>
+      <p class="main-text-map">Дополнительный текст</p>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+      <p class="text-map">Дополнительный текст</p>
+      <p class="text-map-extra">Более мелкий дополнительный текст</p>
+      <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+          var myMap = new ymaps.Map("map", {
+            center: [59.158151, 37.934534], // Координаты центра карты (например, Москва)
+            zoom: 10, // Масштаб карты
+          });
+
+          var myPlacemark = new ymaps.Placemark([59.158151, 37.934534], {
+            hintContent: "Москва!",
+            balloonContent: "Столица России",
+          });
+
+          myMap.geoObjects.add(myPlacemark);
+        }
+      </script>
     </div>
   </body>
 </html>
