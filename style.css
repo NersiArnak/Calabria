@@ -725,7 +725,7 @@ body {
 
   .product-text-additional {
     font-size: 18px; /* Задайте желаемый размер шрифта */
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .div-cards {
