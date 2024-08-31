@@ -147,7 +147,7 @@ body {
   flex-direction: column; /* Добавляем flex-колонку, чтобы элементы располагались вертикально */
   align-items: center; /* Центрирование по горизонтали */
   padding: 0px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .product-text {
