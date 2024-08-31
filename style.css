@@ -760,8 +760,8 @@ body {
   }
 
   .product-text {
-    font-size: 25px; /* Задайте желаемый размер шрифта */
-    margin-top: 25px;
+    font-size: 20px;
+    margin-top: 22px;
   }
 
   .product-text-additional {
@@ -791,7 +791,7 @@ body {
   }
 
   .parametr-img {
-    width: 125px; /* Уменьшаем размер изображения */
+    width: 120px; /* Уменьшаем размер изображения */
     height: 100px;
   }
 
@@ -804,6 +804,11 @@ body {
     height: 28px;
     font-size: 11px;
     margin-bottom: 6px;
+  }
+
+  .info-company-text {
+    font-size: 20px;
+    margin-top: 22px;
   }
 
   .extra-text {
