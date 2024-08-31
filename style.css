@@ -754,7 +754,7 @@ body {
   }
 
   .product-text-additional {
-    font-size: 18px; /* Задайте желаемый размер шрифта */
+    font-size: 14px; /* Задайте желаемый размер шрифта */
   }
 
   .div-cards {
@@ -762,6 +762,7 @@ body {
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
     justify-content: center; /* Центрируем карточки по горизонтали */
     gap: 30px; /* Уменьшаем расстояние между карточками */
+    margin-bottom: 3%;
   }
 
   .card {
