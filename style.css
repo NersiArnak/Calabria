@@ -143,12 +143,11 @@ body {
   height: 100vh;
   background-color: rgb(255, 255, 255);
   background-size: cover;
-  /* background-position: center;
-  background-repeat: no-repeat; */
   display: flex;
   flex-direction: column; /* Добавляем flex-колонку, чтобы элементы располагались вертикально */
   align-items: center; /* Центрирование по горизонтали */
   padding: 0px;
+  margin-top: 5px;
 }
 
 .product-text {
