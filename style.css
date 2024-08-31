@@ -372,11 +372,6 @@ body {
     color: rgb(205, 205, 205);
   }
 
-  .title-name-contacts {
-    margin-top: 30px;
-    font-size: 25px;
-  }
-
   .main-text-map {
     color: white;
     font-size: 21px;
@@ -641,6 +636,7 @@ body {
   .title-name-contacts {
     font-size: 22px;
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .info-address1 {
@@ -813,12 +809,13 @@ body {
   .title-name-contacts {
     font-size: 20px;
     margin-top: 22px;
+    margin-bottom: 20px;
   }
 
   .info-address1 {
     width: 90%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     gap: 5%;
     padding: 15px;
   }
