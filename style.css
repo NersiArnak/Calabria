@@ -760,8 +760,13 @@ body {
   }
 
   .parametr-img {
-    width: 140px; /* Уменьшаем размер изображения */
+    width: 130px; /* Уменьшаем размер изображения */
     height: 100px;
+  }
+
+  .hover-image-scale {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .text-price-img {
