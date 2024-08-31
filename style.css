@@ -195,6 +195,7 @@ body {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   color: rgb(119, 117, 117);
+  margin-top: 2px;
 }
 
 .parametr-img {
@@ -448,8 +449,6 @@ body {
 
   .pr-text-description {
     font-size: 18px; /* Уменьшаем размер шрифта описания */
-    margin-top: 5px;
-    margin-bottom: 15px;
   }
 
   .parametr-img {
@@ -582,16 +581,10 @@ body {
 
   .pr-text-description {
     font-size: 14px; /* Уменьшаем размер шрифта описания */
-    margin-top: 5px;
   }
   .parametr-img {
     width: 140px; /* Уменьшаем размер изображения */
     height: 100px;
-  }
-
-  .hover-image-scale {
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   .text-price-img {
@@ -756,7 +749,6 @@ body {
 
   .pr-text-description {
     font-size: 14px; /* Уменьшаем размер шрифта описания */
-    margin-top: 5px;
   }
 
   .parametr-img {
@@ -765,8 +757,8 @@ body {
   }
 
   .hover-image-scale {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .text-price-img {
@@ -919,13 +911,15 @@ body {
 
   .pr-text-description {
     font-size: 14px; /* Уменьшаем размер шрифта описания */
-    margin-top: 5px;
-    margin-bottom: 15px;
   }
 
   .parametr-img {
-    width: 100px; /* Уменьшаем размер изображения */
+    width: 120px; /* Уменьшаем размер изображения */
     height: 100px;
+  }
+
+  .text-price-img {
+    font-size: 14px;
   }
 
   .extra-text {
