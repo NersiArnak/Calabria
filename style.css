@@ -711,6 +711,9 @@ body {
     gap: 20px; /* Уменьшаем расстояние между карточками */
     margin-top: 30px; /* Уменьшаем верхний отступ */
   }
+  .text-info-main {
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 499px) {
