@@ -150,7 +150,7 @@ body {
 
 .product-text {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 8px;
 }
 
@@ -582,6 +582,11 @@ dialog {
     color: rgb(205, 205, 205);
   }
 
+  .info-company-text {
+    font-size: 30px;
+    margin-top: 25px;
+  }
+
   .title-name-contacts {
     margin-top: 30px;
     font-size: 25px;
@@ -682,7 +687,7 @@ dialog {
 
   .product-text {
     font-size: 22px;
-    margin-top: 25px;
+    margin-top: 15px;
   }
 
   .product-text-additional {
@@ -731,6 +736,11 @@ dialog {
   }
   .product-text-additional-end {
     font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .info-company-text {
+    font-size: 22px;
     margin-top: 25px;
   }
 
@@ -883,7 +893,7 @@ dialog {
 
   .product-text {
     font-size: 20px;
-    margin-top: 22px;
+    margin-top: 12px;
   }
 
   .product-text-additional {
@@ -1069,7 +1079,7 @@ dialog {
 
   .product-text {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .product-text-additional {
