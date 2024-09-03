@@ -230,7 +230,7 @@ body {
   justify-content: center;
   background-color: rgb(39, 52, 38);
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   border-radius: 25px;
@@ -239,7 +239,7 @@ body {
 
 .button-characteristic:hover {
   background-color: rgb(66, 88, 64);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .product-text-additional-end {
@@ -249,7 +249,7 @@ body {
 }
 
 .color-href-price {
-  color: rgb(66, 88, 64);
+  color: rgb(0, 0, 0);
 }
 
 .info-company-background {
@@ -343,7 +343,7 @@ body {
 
 .main-text-map {
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   margin-top: 30px;
   margin-bottom: 5px;
 }
@@ -356,10 +356,20 @@ body {
 
 .text-map-extra {
   color: rgb(205, 205, 205);
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 5px;
+}
+
+.div-extra-text {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
+
 /* Стили для диалогового окна */
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
@@ -375,7 +385,7 @@ dialog {
   border-radius: 8px;
   border: none;
   outline: none;
-  width: 40%;
+  width: 70%;
 }
 
 .title-name-dialog {
@@ -685,10 +695,6 @@ dialog {
     font-size: 17px;
   }
 
-  .products-background {
-    height: 115%;
-  }
-
   .product-text {
     font-size: 22px;
     margin-top: 15px;
@@ -821,6 +827,10 @@ dialog {
   .text-info-small {
     margin-top: 0.7%;
     font-size: 16px;
+  }
+
+  .products-background {
+    height: 115%;
   }
 
   .div-cards {
