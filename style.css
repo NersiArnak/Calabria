@@ -1059,8 +1059,8 @@ dialog {
   }
 
   .product-text {
-    font-size: 25px; /* Задайте желаемый размер шрифта */
-    margin-top: 25px;
+    font-size: 18px;
+    margin-top: 20px;
   }
 
   .product-text-additional {
