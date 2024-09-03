@@ -144,7 +144,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 10px;
   margin-top: 2px;
 }
 
@@ -727,7 +727,6 @@ dialog {
   }
   .product-text-additional-end {
     font-size: 14px;
-    text-align: center;
     margin-top: 25px;
   }
 
@@ -880,7 +879,7 @@ dialog {
 
   .product-text-additional {
     font-size: 13px;
-    margin-top: 2px;
+    margin-top: 0px;
   }
 
   .div-cards {
@@ -932,7 +931,7 @@ dialog {
   }
   .product-text-additional-end {
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .title-name-contacts {
@@ -1100,7 +1099,6 @@ dialog {
   }
   .product-text-additional-end {
     font-size: 12px;
-    text-align: center;
     margin-top: 20px;
   }
 
