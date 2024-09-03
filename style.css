@@ -361,13 +361,14 @@ body {
 }
 
 .div-extra-text {
-  width: 90%;
+  width: 95%;
   height: auto;
   display: flex;
-  align-items: center;
+  text-align: justify;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 40px;
+  background-color: rgba(1, 1, 1, 0.1);
 }
 
 /* Стили для диалогового окна */
@@ -811,6 +812,12 @@ dialog {
     margin-bottom: 20px;
   }
 
+  .div-extra-text {
+    width: 93%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
   .title-name-dialog {
     margin-bottom: 1%;
     font-size: 15px;
@@ -821,12 +828,6 @@ dialog {
     font-size: 11px;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: rgb(78, 78, 78);
-  }
-
-  .div-extra-text {
-    width: 94%;
-    margin-top: 15px;
-    margin-bottom: 40px;
   }
 }
 
