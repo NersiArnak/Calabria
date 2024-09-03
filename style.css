@@ -145,6 +145,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   border: none;
   background-color: rgb(255, 255, 255);
+  color: black;
 }
 .btn-cont-info:hover {
   background-color: rgb(197, 196, 196);
@@ -926,7 +927,7 @@ dialog {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 35%;
+    height: 25%;
   }
 
   .text-info-calabria {
