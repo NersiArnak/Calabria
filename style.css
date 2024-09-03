@@ -680,7 +680,7 @@ dialog {
   }
 
   .product-text {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 25px;
   }
 
@@ -878,11 +878,12 @@ dialog {
 
   .products-background {
     height: 100vh;
+    margin-bottom: 2px;
   }
 
   .product-text {
     font-size: 20px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
 
   .product-text-additional {
