@@ -145,6 +145,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  margin-bottom: 2px;
 }
 
 .product-text {
@@ -878,12 +879,11 @@ dialog {
 
   .products-background {
     height: 100vh;
-    margin-bottom: 5px;
   }
 
   .product-text {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 22px;
   }
 
   .product-text-additional {
