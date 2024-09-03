@@ -155,7 +155,7 @@ body {
 }
 
 .product-text-additional {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .div-cards {
@@ -243,7 +243,7 @@ body {
 }
 
 .product-text-additional-end {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin-top: 40px;
 }
@@ -665,6 +665,7 @@ dialog {
     width: 100%;
     max-width: 70%;
     height: 42%;
+    padding: 3%;
   }
 
   .text-info-calabria {
@@ -681,7 +682,8 @@ dialog {
   }
 
   .product-text-additional {
-    font-size: 1px;
+    text-align: center;
+    font-size: 14px;
     margin-top: 5px;
   }
 
@@ -724,9 +726,9 @@ dialog {
     margin-top: 8px; /* Уменьшаем верхний отступ */
   }
   .product-text-additional-end {
-    font-size: 14px; /* Задайте желаемый размер шрифта */
-    text-align: center; /* Центрирование текста внутри элемента */
-    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
   }
 
   .title-name-contacts {
@@ -877,7 +879,8 @@ dialog {
   }
 
   .product-text-additional {
-    font-size: 18px; /* Задайте желаемый размер шрифта */
+    font-size: 13px;
+    margin-top: 2px;
   }
 
   .div-cards {
@@ -928,9 +931,8 @@ dialog {
     margin-top: 8px; /* Уменьшаем верхний отступ */
   }
   .product-text-additional-end {
-    font-size: 14px; /* Задайте желаемый размер шрифта */
-    text-align: center; /* Центрирование текста внутри элемента */
-    margin-top: 30px;
+    font-size: 13px;
+    margin-top: 20px;
   }
 
   .title-name-contacts {
@@ -1063,8 +1065,8 @@ dialog {
   }
 
   .product-text-additional {
-    font-size: 18px; /* Задайте желаемый размер шрифта */
-    margin-top: 5px;
+    font-size: 12px; /* Задайте желаемый размер шрифта */
+    margin-top: 2px;
   }
 
   .div-cards {
@@ -1097,9 +1099,9 @@ dialog {
     margin-top: 8px; /* Уменьшаем верхний отступ */
   }
   .product-text-additional-end {
-    font-size: 14px; /* Задайте желаемый размер шрифта */
-    text-align: center; /* Центрирование текста внутри элемента */
-    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .title-name-contacts {
