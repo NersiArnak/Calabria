@@ -713,6 +713,8 @@ dialog {
 
   .btn-cont-info {
     font-size: 11px;
+    width: 25%;
+    height: 18%;
   }
 
   .text-info-calabria {
@@ -857,8 +859,11 @@ dialog {
   .text-info-calabria {
     font-size: 34px;
   }
+
   .btn-cont-info {
-    font-size: 10px;
+    font-size: 12px;
+    width: 30%;
+    height: 18%;
   }
 
   .text-info-small {
@@ -927,7 +932,7 @@ dialog {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 25%;
+    height: 20%;
   }
 
   .text-info-calabria {
