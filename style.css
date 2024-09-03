@@ -248,6 +248,10 @@ body {
   margin-top: 40px;
 }
 
+.color-href-price {
+  color: rgb(66, 88, 64);
+}
+
 .info-company-background {
   width: 100%;
   height: 100vh;
