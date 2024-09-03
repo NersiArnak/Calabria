@@ -136,6 +136,20 @@ body {
   color: rgb(223, 223, 223);
 }
 
+.btn-cont-info {
+  margin-top: 3%;
+  width: 25%;
+  height: 15%;
+  border-radius: 25px;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+.btn-cont-info:hover {
+  background-color: rgb(197, 196, 196);
+}
+
 .products-background {
   width: 100%;
   height: 100vh;
@@ -538,6 +552,10 @@ dialog {
   .text-info-small {
     font-size: 19px;
   }
+
+  .btn-cont-info {
+    font-size: 13px;
+  }
   .div-cards {
     margin-top: 30px;
     gap: 40px;
@@ -692,6 +710,10 @@ dialog {
     padding: 3%;
   }
 
+  .btn-cont-info {
+    font-size: 11px;
+  }
+
   .text-info-calabria {
     font-size: 36px;
   }
@@ -834,6 +856,9 @@ dialog {
   .text-info-calabria {
     font-size: 34px;
   }
+  .btn-cont-info {
+    font-size: 10px;
+  }
 
   .text-info-small {
     margin-top: 0.7%;
@@ -901,7 +926,7 @@ dialog {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 42%;
+    height: 35%;
   }
 
   .text-info-calabria {
