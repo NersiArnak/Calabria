@@ -145,7 +145,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  margin-top: 2px;
 }
 
 .product-text {
@@ -676,6 +675,10 @@ dialog {
     font-size: 17px;
   }
 
+  .products-background {
+    height: 115%;
+  }
+
   .product-text {
     font-size: 25px;
     margin-top: 25px;
@@ -804,6 +807,7 @@ dialog {
     margin-top: 0.7%;
     font-size: 16px;
   }
+
   .div-cards {
     flex-direction: row; /* Горизонтальное расположение карточек */
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
@@ -870,6 +874,10 @@ dialog {
 
   .text-info-small {
     font-size: 15px;
+  }
+
+  .products-background {
+    height: 100vh;
   }
 
   .product-text {
