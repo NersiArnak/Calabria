@@ -939,6 +939,10 @@ dialog {
     margin-top: 5px;
     margin-bottom: 150px;
   }
+
+  dialog {
+    width: 70%;
+  }
   .title-name-dialog {
     margin-bottom: 1%;
     font-size: 14px;
