@@ -1617,7 +1617,7 @@ dialog {
 
   .card-company {
     width: 32%;
-    height: 50%;
+    height: 60%;
     border-radius: 5%;
     padding: 10px;
   }
@@ -1635,7 +1635,7 @@ dialog {
 
   .main-text-company {
     font-size: 9px;
-    margin-top: 0px;
+    margin-top: 2px;
   }
 
   .title-name-contacts {
