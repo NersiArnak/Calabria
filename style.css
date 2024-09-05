@@ -1589,7 +1589,7 @@ dialog {
   }
 
   .main-company-text {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .block-company {
@@ -1605,37 +1605,37 @@ dialog {
 
   .description-company-text {
     margin-top: 10px;
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .div-card-company {
     width: 90%;
     margin-top: 20px;
     height: 35%;
-    gap: 4%;
+    gap: 2%;
   }
 
   .card-company {
     width: 32%;
-    height: 80%;
-    border-radius: 10%;
+    height: 50%;
+    border-radius: 5%;
     padding: 10px;
   }
 
   .img-card-company {
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
+    width: 28px;
+    height: 28px;
+    margin-top: 2px;
   }
 
   .title-card-company {
     font-size: 9px;
-    margin-top: 5px;
+    margin-top: 7px;
   }
 
   .main-text-company {
     font-size: 9px;
-    margin-top: 7px;
+    margin-top: 0px;
   }
 
   .title-name-contacts {
