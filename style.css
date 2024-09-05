@@ -1585,6 +1585,7 @@ dialog {
   .div-company-text {
     width: 95%;
     margin-top: 22px;
+    border-radius: 15px;
     padding: 10px 15px;
   }
 
@@ -1612,7 +1613,7 @@ dialog {
     width: 90%;
     margin-top: 20px;
     height: 35%;
-    gap: 2%;
+    gap: 3%;
   }
 
   .card-company {
