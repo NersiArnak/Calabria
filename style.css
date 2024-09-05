@@ -288,6 +288,99 @@ body {
   color: white;
 }
 
+.div-company-text {
+  width: 80%;
+  margin-top: 20px;
+  padding: 20px 25px;
+  background-color: rgba(82, 82, 82, 0.6);
+  border-radius: 25px;
+}
+
+.main-company-text {
+  font-size: 18px;
+  text-align: justify;
+  /* color: rgb(215, 215, 215); */
+  color: white;
+}
+
+.block-company {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-top: 25px;
+  gap: 5%;
+}
+
+.div-company {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description-company-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(227, 227, 227);
+}
+
+.img-company {
+  width: 120px;
+  height: 120px;
+}
+
+.div-card-company {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 30px;
+  height: 35%;
+  gap: 5%;
+}
+
+.card-company {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 18%;
+  height: 100%;
+  background-color: rgba(82, 82, 82, 0.6);
+  border-radius: 10%;
+  padding: 10px;
+  position: relative;
+}
+
+.img-card-company {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.title-card-company {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  color: white;
+}
+
+.main-text-company {
+  text-align: left;
+  font-size: 15px;
+  margin-left: 2px;
+  margin-top: 5px;
+  color: rgb(203, 201, 201);
+}
+.strip {
+  text-align: center;
+  color: white;
+}
+
+.strip-end {
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  color: white;
+}
 .info-contacts-background {
   width: 100%;
   height: auto;
