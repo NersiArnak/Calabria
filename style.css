@@ -313,12 +313,15 @@ body {
 }
 
 .div-company {
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .description-company-text {
+  text-align: center;
   margin-top: 10px;
   font-size: 18px;
   color: rgb(227, 227, 227);
@@ -363,24 +366,22 @@ body {
   color: white;
 }
 
+.div-text-company {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .main-text-company {
-  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: flex;
   font-size: 15px;
-  margin-left: 2px;
   margin-top: 5px;
   color: rgb(203, 201, 201);
 }
-.strip {
-  text-align: center;
-  color: white;
-}
 
-.strip-end {
-  text-align: center;
-  position: absolute;
-  bottom: 25px;
-  color: white;
-}
 .info-contacts-background {
   width: 100%;
   height: auto;
@@ -515,6 +516,61 @@ dialog {
   color: rgb(78, 78, 78);
 }
 
+@media (max-height: 700px) {
+  .div-company-text {
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+
+  .main-company-text {
+    font-size: 17px;
+  }
+
+  .block-company {
+    margin-top: 20px;
+  }
+
+  .description-company-text {
+    margin-top: 8px;
+    font-size: 17px;
+  }
+
+  .img-company {
+    width: 100px;
+    height: 100px;
+  }
+
+  .div-card-company {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 30px;
+    height: 37%;
+    gap: 5%;
+  }
+
+  .card-company {
+    width: 18%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+
 @media (max-width: 1200px) {
   .text-info-calabria {
     font-size: 42px;
@@ -539,6 +595,60 @@ dialog {
     color: rgb(205, 205, 205);
   }
 
+  .div-company-text {
+    width: 90%;
+    margin-top: 25px;
+    padding: 15px 20px;
+  }
+
+  .main-company-text {
+    font-size: 16px;
+  }
+
+  .block-company {
+    margin-top: 25px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .img-company {
+    width: 110px;
+    height: 110px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 30px;
+    height: 35%;
+    gap: 5%;
+  }
+
+  .card-company {
+    width: 18%;
+    height: 100%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 13px;
+    margin-top: 7px;
+  }
+
   .title-name-contacts {
     margin-top: 30px;
     font-size: 25px;
@@ -561,6 +671,62 @@ dialog {
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .div-company-text {
+    width: 90%;
+    margin-top: 25px;
+    padding: 15px 20px;
+  }
+
+  .main-company-text {
+    font-size: 14px;
+  }
+
+  .block-company {
+    margin-top: 25px;
+  }
+
+  .img-company {
+    width: 95px;
+    height: 95px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 30px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 18%;
+    height: 100%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 42px;
+    height: 42px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 13px;
+    margin-top: 7px;
   }
 }
 
@@ -630,6 +796,61 @@ dialog {
   .extra-text {
     font-size: 16px;
     margin-top: 15px;
+  }
+
+  .div-company-text {
+    width: 90%;
+    margin-top: 25px;
+    padding: 15px 20px;
+  }
+
+  .main-company-text {
+    font-size: 14px;
+  }
+
+  .block-company {
+    margin-top: 25px;
+    width: 85%;
+  }
+
+  .img-company {
+    width: 95px;
+    height: 95px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 30px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 20%;
+    height: 100%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 42px;
+    height: 42px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 13px;
+    margin-top: 7px;
   }
 
   .title-name-dialog {
@@ -718,6 +939,62 @@ dialog {
   .info-company-text {
     font-size: 30px;
     margin-top: 25px;
+  }
+
+  .div-company-text {
+    width: 90%;
+    margin-top: 25px;
+    padding: 10px 15px;
+  }
+
+  .main-company-text {
+    font-size: 14px;
+  }
+
+  .block-company {
+    width: 85%;
+    margin-top: 20px;
+    gap: 5%;
+  }
+
+  .img-company {
+    width: 85px;
+    height: 85px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 25px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 21%;
+    height: 100%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 38px;
+    height: 38px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 12px;
+    margin-top: 7px;
   }
 
   .title-name-contacts {
@@ -883,6 +1160,62 @@ dialog {
     margin-top: 25px;
   }
 
+  .div-company-text {
+    width: 90%;
+    margin-top: 25px;
+    padding: 10px 15px;
+  }
+
+  .main-company-text {
+    font-size: 12px;
+  }
+
+  .block-company {
+    width: 85%;
+    margin-top: 20px;
+    gap: 5%;
+  }
+
+  .img-company {
+    width: 80px;
+    height: 80px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 20px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 22%;
+    height: 85%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 11px;
+    margin-top: 7px;
+  }
+
   .title-name-contacts {
     font-size: 22px;
     margin-top: 25px;
@@ -954,7 +1287,7 @@ dialog {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .text-info-calabria {
     font-size: 34px;
   }
@@ -982,6 +1315,139 @@ dialog {
   }
   .text-info-main {
     margin-bottom: 0px;
+  }
+
+  .info-company-text {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+
+  .div-company-text {
+    width: 95%;
+    margin-top: 25px;
+    padding: 10px 15px;
+  }
+
+  .main-company-text {
+    font-size: 12px;
+  }
+
+  .block-company {
+    width: 85%;
+    margin-top: 20px;
+    gap: 5%;
+  }
+
+  .img-company {
+    width: 80px;
+    height: 80px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 20px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 25%;
+    height: 85%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 11px;
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card-company {
+    width: 30%;
+    height: 85%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .info-company-text {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+
+  .div-company-text {
+    width: 95%;
+    margin-top: 25px;
+    padding: 10px 15px;
+  }
+
+  .main-company-text {
+    font-size: 10px;
+  }
+
+  .block-company {
+    width: 85%;
+    margin-top: 20px;
+    gap: 5%;
+  }
+
+  .img-company {
+    width: 75px;
+    height: 75px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 20px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 30%;
+    height: 80%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 10px;
+    margin-top: 7px;
   }
 }
 
@@ -1074,11 +1540,11 @@ dialog {
   }
 
   .pr-text-main {
-    font-size: 18px; /* Уменьшаем размер шрифта заголовка */
+    font-size: 16px; /* Уменьшаем размер шрифта заголовка */
   }
 
   .pr-text-description {
-    font-size: 14px; /* Уменьшаем размер шрифта описания */
+    font-size: 12px; /* Уменьшаем размер шрифта описания */
   }
 
   .parametr-img {
@@ -1087,7 +1553,7 @@ dialog {
   }
 
   .text-price-img {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .button-characteristic {
@@ -1109,6 +1575,67 @@ dialog {
   .product-text-additional-end {
     font-size: 13px;
     margin-top: 18px;
+  }
+
+  .info-company-text {
+    font-size: 22px;
+    margin-top: 22px;
+  }
+
+  .div-company-text {
+    width: 95%;
+    margin-top: 22px;
+    padding: 10px 15px;
+  }
+
+  .main-company-text {
+    font-size: 9px;
+  }
+
+  .block-company {
+    width: 85%;
+    margin-top: 20px;
+    gap: 5%;
+  }
+
+  .img-company {
+    width: 70px;
+    height: 70px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+
+  .div-card-company {
+    width: 90%;
+    margin-top: 20px;
+    height: 35%;
+    gap: 4%;
+  }
+
+  .card-company {
+    width: 30%;
+    height: 80%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 9px;
+    margin-top: 7px;
   }
 
   .title-name-contacts {
@@ -1258,7 +1785,7 @@ dialog {
   }
 
   .pr-text-description {
-    font-size: 14px; /* Уменьшаем размер шрифта описания */
+    font-size: 10px; /* Уменьшаем размер шрифта описания */
   }
 
   .parametr-img {
@@ -1267,7 +1794,7 @@ dialog {
   }
 
   .text-price-img {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .extra-text {
