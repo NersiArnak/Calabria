@@ -436,11 +436,11 @@ dialog {
 
   .img-main {
     margin-top: 2px;
-    width: 180px;
-    height: 230px;
+    width: 160px;
+    height: 200px;
   }
   .btn-download {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
     width: 130px;
     height: 35px;
