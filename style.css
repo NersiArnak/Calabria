@@ -1888,8 +1888,14 @@ dialog {
 }
 
 @media (max-height: 600px) {
+  .navbar-info {
+    height: 7%;
+  }
+  .navbar-content {
+    height: 7%;
+  }
   .img-logo {
-    width: 110px;
+    width: 120px;
   }
   .products-background {
     height: auto;
