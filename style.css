@@ -1891,11 +1891,14 @@ dialog {
   .navbar-info {
     height: 7%;
   }
-  .navbar-content {
+  .navbar-categories {
     height: 7%;
   }
+  .cont-info {
+    height: 30%;
+  }
   .img-logo {
-    width: 120px;
+    width: 125px;
   }
   .products-background {
     height: auto;
