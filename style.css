@@ -1892,7 +1892,7 @@ dialog {
     height: 10%;
   }
   .navbar-categories {
-    height: 10%;
+    height: 15%;
   }
   .cont-info {
     height: 55%;
@@ -1904,6 +1904,6 @@ dialog {
     height: auto;
   }
   .info-company-background {
-    height: auto;
+    height: 130%;
   }
 }
