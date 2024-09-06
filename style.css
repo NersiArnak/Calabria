@@ -1752,7 +1752,7 @@ dialog {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 42%;
+    height: 25%;
   }
 
   .text-info-calabria {
@@ -1778,11 +1778,11 @@ dialog {
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
     justify-content: center; /* Центрируем карточки по горизонтали */
     gap: 30px; /* Уменьшаем расстояние между карточками */
-    margin-top: 35px; /* Уменьшаем верхний отступ */
+    margin-top: 20px; /* Уменьшаем верхний отступ */
   }
 
   .pr-text-main {
-    font-size: 18px; /* Уменьшаем размер шрифта заголовка */
+    font-size: 16px; /* Уменьшаем размер шрифта заголовка */
   }
 
   .pr-text-description {
@@ -1804,12 +1804,43 @@ dialog {
   }
   .product-text-additional-end {
     font-size: 12px;
+    margin-top: 18px;
+  }
+
+  .div-card-company {
+    width: 90%;
     margin-top: 20px;
+    height: 35%;
+    gap: 2%;
+  }
+
+  .card-company {
+    width: 32%;
+    height: 70%;
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 28px;
+    height: 28px;
+    margin-top: 2px;
+  }
+
+  .title-card-company {
+    font-size: 9px;
+    margin-top: 7px;
+  }
+
+  .main-text-company {
+    font-size: 9px;
+    margin-top: 2px;
   }
 
   .title-name-contacts {
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .info-address1 {
@@ -1822,7 +1853,7 @@ dialog {
   .info-address2 {
     width: 90%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .text-info-main {
