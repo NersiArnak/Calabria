@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calabria</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="price-list.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -38,5 +38,61 @@
         <a class="style-a-categories" href="contacts.html">Контакты</a>
       </div>
     </div>
+    <div class="div-background">
+      <div class="div-text-main">
+        <p class="text-main">
+          Прайс-лист нашей продукции обновляется ежемесячно. Все цены указаны с
+          учетом НДС 20% на условиях самовывоза.
+        </p>
+      </div>
+      <p class="text-description">Прайс-лист от 06.09.24</p>
+      <img
+        id="img-main"
+        class="img-main"
+        src="/img/КП_КАЛАБ.pdf"
+        alt="error img"
+      />
+      <dialog id="dialog">
+        <img
+          class="img-main-description"
+          src="/img/КП_КАЛАБ.pdf"
+          alt="error img"
+        />
+      </dialog>
+      <button id="downloadBtn" class="btn-download">Скачать</button>
+    </div>
+
+    <script>
+      // JavaScript для обработки нажатия на кнопку
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          // Создание ссылки для скачивания
+          const link = document.createElement("a");
+          link.href = "img/КП_КАЛАБ.pdf"; // Укажите путь к вашему файлу
+          link.download = "КП_КАЛАБ.pdf"; // Укажите имя файла, который будет скачан
+          link.click();
+        });
+
+      document
+        .getElementById("img-main")
+        .addEventListener("click", function () {
+          document.getElementById("dialog").showModal();
+        });
+
+      document.querySelectorAll("dialog").forEach((dialog) => {
+        dialog.addEventListener("click", function (event) {
+          const rect = this.getBoundingClientRect();
+          const isInDialog =
+            rect.top <= event.clientY &&
+            event.clientY <= rect.top + rect.height &&
+            rect.left <= event.clientX &&
+            event.clientX <= rect.left + rect.width;
+          if (!isInDialog) {
+            this.close();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
