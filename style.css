@@ -1908,6 +1908,10 @@ dialog {
   .img-logo {
     width: 130px;
   }
+
+  .main-company-text {
+    font-size: 16px;
+  }
   .card-company {
     width: 200px;
     height: 240px;
@@ -1927,5 +1931,11 @@ dialog {
 
   .info-company-background {
     height: auto;
+  }
+
+  .text-map-extra {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
