@@ -1917,7 +1917,7 @@ dialog {
     height: 240px;
     border-radius: 5%;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .product-text-additional-end {
@@ -1934,7 +1934,7 @@ dialog {
   }
 
   .text-map-extra {
-    font-size: 11.5px;
+    font-size: 11px;
     margin-top: 8px;
     margin-bottom: 8px;
   }
