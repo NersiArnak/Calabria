@@ -348,6 +348,15 @@ dialog {
     font-size: 11px;
   }
 
+  .text-main {
+    font-size: 11px;
+  }
+
+  .text-description {
+    margin-top: 10px;
+    font-size: 10.5px;
+  }
+
   dialog {
     width: 400px;
     height: 80%;
