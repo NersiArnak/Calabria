@@ -1900,10 +1900,17 @@ dialog {
   .img-logo {
     width: 130px;
   }
+  .card-company {
+    width: 210px;
+    height: 250px;
+    border-radius: 5%;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
   .products-background {
     height: auto;
   }
   .info-company-background {
-    height: 130%;
+    height: auto;
   }
 }
