@@ -1886,3 +1886,15 @@ dialog {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .img-logo {
+    width: 110px;
+  }
+  .products-background {
+    height: auto;
+  }
+  .info-company-background {
+    height: auto;
+  }
+}
