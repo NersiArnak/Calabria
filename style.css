@@ -1577,6 +1577,10 @@ dialog {
     margin-top: 18px;
   }
 
+  .info-company-background {
+    height: 100%;
+  }
+
   .info-company-text {
     font-size: 22px;
     margin-top: 22px;
@@ -1907,9 +1911,16 @@ dialog {
     padding: 10px;
     margin-bottom: 35px;
   }
+
+  .product-text-additional-end {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
   .products-background {
     height: auto;
   }
+
   .info-company-background {
     height: auto;
   }
