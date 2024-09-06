@@ -441,9 +441,9 @@ dialog {
   }
   .btn-download {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 130px;
-    height: 35px;
+    height: 32px;
     border-radius: 15px;
     font-size: 13px;
   }
