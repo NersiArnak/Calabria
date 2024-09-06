@@ -1889,16 +1889,16 @@ dialog {
 
 @media (max-height: 600px) {
   .navbar-info {
-    height: 7%;
+    height: 10%;
   }
   .navbar-categories {
-    height: 7%;
+    height: 10%;
   }
   .cont-info {
-    height: 30%;
+    height: 55%;
   }
   .img-logo {
-    width: 125px;
+    width: 130px;
   }
   .products-background {
     height: auto;
