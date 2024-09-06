@@ -436,8 +436,8 @@ dialog {
 
   .img-main {
     margin-top: 2px;
-    width: 200px;
-    height: 260px;
+    width: 180px;
+    height: 230px;
   }
   .btn-download {
     margin-top: 15px;
@@ -449,7 +449,7 @@ dialog {
   }
 
   dialog {
-    width: 210px;
+    width: 200px;
     height: 95%;
   }
 }
