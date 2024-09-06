@@ -1887,7 +1887,7 @@ dialog {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-height: 600px) {
   .img-logo {
     width: 110px;
   }
