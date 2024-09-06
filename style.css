@@ -1910,7 +1910,7 @@ dialog {
   }
 
   .main-company-text {
-    font-size: 16px;
+    font-size: 15px;
   }
   .card-company {
     width: 200px;
@@ -1921,7 +1921,7 @@ dialog {
   }
 
   .product-text-additional-end {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 25px;
   }
 
@@ -1934,8 +1934,8 @@ dialog {
   }
 
   .text-map-extra {
-    font-size: 10px;
-    margin-top: 10px;
+    font-size: 11px;
+    margin-top: 8px;
     margin-bottom: 20px;
   }
 }
