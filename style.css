@@ -1897,7 +1897,7 @@ dialog {
 
 @media (max-height: 600px) {
   .navbar-info {
-    height: 10%;
+    height: 15%;
   }
   .navbar-categories {
     height: 15%;
