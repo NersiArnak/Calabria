@@ -460,4 +460,8 @@ dialog {
     height: auto;
     padding: 10px;
   }
+  .block-container {
+    margin-top: 8px;
+    gap: 25px;
+  }
 }
