@@ -1771,6 +1771,10 @@ dialog {
     font-size: 14px;
   }
 
+  .products-background {
+    height: auto;
+  }
+
   .product-text {
     font-size: 18px;
     margin-top: 10px;
@@ -1782,11 +1786,31 @@ dialog {
   }
 
   .div-cards {
-    flex-direction: row; /* Горизонтальное расположение карточек */
-    flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
-    justify-content: center; /* Центрируем карточки по горизонтали */
     gap: 30px; /* Уменьшаем расстояние между карточками */
     margin-top: 20px; /* Уменьшаем верхний отступ */
+  }
+
+  .card {
+    width: 42%; /* Устанавливаем ширину карточек для размещения двух в строке */
+    height: auto; /* Автоматическая высота */
+    padding: 12px; /* Уменьшаем внутренние отступы */
+  }
+
+  .hover-image-scale {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .parametr-img {
+    width: 100px; /* Уменьшаем размер изображения */
+    height: 80px;
+  }
+
+  .button-characteristic {
+    width: 115px;
+    height: 22px;
+    font-size: 10px;
+    margin-bottom: 6px;
   }
 
   .pr-text-main {
