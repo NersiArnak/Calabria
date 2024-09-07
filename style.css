@@ -1975,14 +1975,8 @@ dialog {
     height: auto;
     padding: 10px;
   }
-
-  .text-info-main {
-    font-size: 10px;
-    margin-bottom: 3px;
-  }
-
-  .text-info-extra {
-    font-size: 10px;
-    margin-top: 2px;
+  .block-container {
+    margin-top: 10px;
+    gap: 25px;
   }
 }
