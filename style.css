@@ -1972,11 +1972,3 @@ dialog {
     margin-bottom: 8px;
   }
 }
-
-@media (max-height: 420px) {
-  .navbar-info {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-}
