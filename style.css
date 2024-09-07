@@ -1921,6 +1921,11 @@ dialog {
 
 @media (max-height: 600px) {
   .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .navbar-info {
     height: 15%;
   }
   .navbar-categories {
@@ -1958,12 +1963,12 @@ dialog {
   }
 
   .text-info-main {
-    font-size: 10px;
+    font-size: 13px;
     margin-bottom: 3px;
   }
 
   .text-info-extra {
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 2px;
   }
   .text-map-extra {
