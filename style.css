@@ -1957,9 +1957,35 @@ dialog {
     height: auto;
   }
 
+  .text-info-main {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+
+  .text-info-extra {
+    font-size: 10px;
+    margin-top: 2px;
+  }
   .text-map-extra {
     font-size: 11px;
     margin-top: 8px;
     margin-bottom: 8px;
+  }
+}
+
+@media (max-height: 420px) {
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .text-info-main {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .text-info-extra {
+    font-size: 8px;
   }
 }
