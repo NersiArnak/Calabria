@@ -1979,13 +1979,4 @@ dialog {
     height: auto;
     padding: 10px;
   }
-
-  .text-info-main {
-    font-size: 8px;
-    margin-bottom: 2px;
-  }
-
-  .text-info-extra {
-    font-size: 8px;
-  }
 }

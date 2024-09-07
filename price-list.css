@@ -453,3 +453,11 @@ dialog {
     height: 95%;
   }
 }
+
+@media (max-height: 600px) {
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+}
