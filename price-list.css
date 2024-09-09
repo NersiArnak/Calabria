@@ -428,7 +428,7 @@ dialog {
 
 @media (max-height: 930px) {
   .dialog {
-    height: 80%;
+    height: 70%;
   }
 }
 
