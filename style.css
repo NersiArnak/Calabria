@@ -486,9 +486,8 @@ body {
   margin-bottom: 40px;
 }
 
-/* Стили для диалогового окна */
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 dialog {
@@ -569,6 +568,9 @@ dialog {
     font-size: 15px;
     margin-top: 5px;
   }
+}
+
+@media (max-width: 1550px) {
 }
 
 @media (max-width: 1200px) {
