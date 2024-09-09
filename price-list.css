@@ -186,21 +186,6 @@ dialog {
   }
 }
 
-@media (max-width: 1400px) {
-  dialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    width: 480px;
-    height: 95%;
-  }
-}
-
 @media (max-width: 1150px) {
   .div-text-main {
     margin-top: 20px;
