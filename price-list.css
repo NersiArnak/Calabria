@@ -426,6 +426,12 @@ dialog {
   }
 }
 
+@media (max-height: 930px) {
+  .dialog {
+    height: 80%;
+  }
+}
+
 @media (max-height: 600px) {
   .navbar-info {
     height: 15%;
