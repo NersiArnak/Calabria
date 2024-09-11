@@ -571,8 +571,8 @@ body {
   }
 
   .card-company {
-    width: 32%;
-    height: 65%;
+    width: 220px;
+    height: 100%;
     padding: 10px;
   }
 
