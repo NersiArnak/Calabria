@@ -588,5 +588,67 @@
         });
       </script>
     </div>
+
+    <!-- <div class="backCall">
+      <h1>Форма обратного звонка</h1>
+      <form id="callbackForm">
+        <label for="fullName">ФИО:</label><br />
+        <input type="text" id="fullName" name="fullName" required /><br /><br />
+
+        <label for="phoneNumber">Номер телефона:</label><br />
+        <input
+          type="tel"
+          id="phoneNumber"
+          name="phoneNumber"
+          required
+        /><br /><br />
+
+        <label for="callTime">Удобное время для звонка:</label><br />
+        <input type="text" id="callTime" name="callTime" required /><br /><br />
+
+        <input type="submit" value="Отправить" />
+      </form>
+      <p id="responseMessage"></p>
+
+      <div class="fixed-element">Обратный звонок</div>
+
+      <div class="content">
+        <p>Длинный контент, чтобы проверить прокрутку.</p>
+        <p>Продолжайте прокручивать...</p>
+        <p>...</p>
+      </div>
+      <script>
+        document
+          .getElementById("callbackForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var formData = {
+              fullName: document.getElementById("fullName").value,
+              phoneNumber: document.getElementById("phoneNumber").value,
+              callTime: document.getElementById("callTime").value,
+            };
+
+            fetch(
+              "https://script.google.com/macros/s/AKfycbz3_ylqrOoZY25zBUUoAUExljr1Rk6wJv29Oh9pX5x1fku2bJY-pJFGHma3csWy8pOCzQ/exec",
+              {
+                method: "POST",
+                body: JSON.stringify(formData),
+              }
+            )
+              .then((response) => response.json())
+              .then((data) => {
+                document.getElementById("responseMessage").innerText =
+                  "Данные успешно отправлены!";
+                document.getElementById("callbackForm").reset();
+              })
+              .catch((error) => {
+                document.getElementById("responseMessage").innerText =
+                  "Ошибка отправки данных!";
+                console.error("Error:", error);
+              });
+          });
+      </script>
+    </div> -->
   </body>
 </html>

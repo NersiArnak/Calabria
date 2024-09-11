@@ -338,17 +338,17 @@ body {
   width: 90%;
   margin-top: 30px;
   height: 35%;
-  gap: 5%;
+  gap: 40px;
 }
 
 .card-company {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 18%;
+  width: 220px;
   height: 100%;
   background-color: rgba(82, 82, 82, 0.6);
-  border-radius: 10%;
+  border-radius: 5%;
   padding: 10px;
   position: relative;
 }
@@ -368,7 +368,7 @@ body {
 
 .div-text-company {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -376,7 +376,6 @@ body {
 .main-text-company {
   width: 100%;
   height: 100%;
-  display: flex;
   font-size: 15px;
   margin-top: 5px;
   color: rgb(203, 201, 201);
@@ -515,10 +514,85 @@ dialog {
   color: rgb(78, 78, 78);
 }
 
-@media (max-width: 1550px) {
+.backCall {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: chocolate;
 }
 
-@media (max-width: 1200px) {
+body {
+  font-family: Arial, sans-serif;
+}
+
+.fixed-element {
+  position: fixed;
+  bottom: 20px; /* Отступ от нижней границы окна */
+  right: 20px; /* Отступ от правой границы окна */
+  background-color: #4caf50; /* Цвет фона */
+  color: white; /* Цвет текста */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругленные углы */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-height: 700px) {
+  .div-company-text {
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+
+  .main-company-text {
+    font-size: 17px;
+  }
+
+  .block-company {
+    margin-top: 20px;
+  }
+
+  .description-company-text {
+    margin-top: 8px;
+    font-size: 17px;
+  }
+
+  .img-company {
+    width: 100px;
+    height: 100px;
+  }
+
+  .div-card-company {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 30px;
+    height: 37%;
+  }
+
+  .card-company {
+    width: 220px;
+    padding: 10px;
+  }
+
+  .img-card-company {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .title-card-company {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .main-text-company {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 1250px) {
   .text-info-calabria {
     font-size: 42px;
   }
@@ -570,14 +644,6 @@ dialog {
     width: 90%;
     margin-top: 30px;
     height: 35%;
-    gap: 5%;
-  }
-
-  .card-company {
-    width: 18%;
-    height: 100%;
-    border-radius: 10%;
-    padding: 10px;
   }
 
   .img-card-company {
@@ -650,13 +716,11 @@ dialog {
     width: 90%;
     margin-top: 30px;
     height: 35%;
-    gap: 4%;
   }
 
   .card-company {
-    width: 18%;
+    width: 220px;
     height: 100%;
-    border-radius: 10%;
     padding: 10px;
   }
 
@@ -774,13 +838,12 @@ dialog {
     width: 90%;
     margin-top: 30px;
     height: 35%;
-    gap: 4%;
   }
 
   .card-company {
-    width: 20%;
+    width: 220px;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 10px;
   }
 
@@ -922,10 +985,11 @@ dialog {
   }
 
   .card-company {
-    width: 21%;
+    width: 200px;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 10px;
+    margin-bottom: 20px;
   }
 
   .img-card-company {
@@ -935,7 +999,7 @@ dialog {
   }
 
   .title-card-company {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 5px;
   }
 
@@ -1141,9 +1205,8 @@ dialog {
   }
 
   .card-company {
-    width: 22%;
+    width: 160px;
     height: 85%;
-    border-radius: 10%;
     padding: 10px;
   }
 
@@ -1154,7 +1217,7 @@ dialog {
   }
 
   .title-card-company {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 5px;
   }
 
@@ -1261,6 +1324,7 @@ dialog {
     margin-top: 30px; /* Уменьшаем верхний отступ */
   }
   .text-info-main {
+    font-size: 10px;
     margin-bottom: 0px;
   }
 
@@ -1303,9 +1367,9 @@ dialog {
   }
 
   .card-company {
-    width: 25%;
+    width: 150px;
     height: 85%;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 10px;
   }
 
@@ -1321,17 +1385,8 @@ dialog {
   }
 
   .main-text-company {
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 7px;
-  }
-}
-
-@media (max-width: 650px) {
-  .card-company {
-    width: 30%;
-    height: 85%;
-    border-radius: 10%;
-    padding: 10px;
   }
 }
 
@@ -1375,9 +1430,9 @@ dialog {
   }
 
   .card-company {
-    width: 30%;
-    height: 80%;
-    border-radius: 10%;
+    width: 150px;
+    height: 75%;
+    border-radius: 5%;
     padding: 10px;
   }
 
@@ -1393,7 +1448,7 @@ dialog {
   }
 
   .main-text-company {
-    font-size: 10px;
+    font-size: 9px;
     margin-top: 7px;
   }
 }
@@ -1866,67 +1921,6 @@ dialog {
   }
 }
 
-@media (max-height: 930px) {
-  dialog {
-    width: 60%;
-  }
-}
-
-@media (max-height: 700px) {
-  .div-company-text {
-    margin-top: 20px;
-    padding: 15px 20px;
-  }
-
-  .main-company-text {
-    font-size: 17px;
-  }
-
-  .block-company {
-    margin-top: 20px;
-  }
-
-  .description-company-text {
-    margin-top: 8px;
-    font-size: 17px;
-  }
-
-  .img-company {
-    width: 100px;
-    height: 100px;
-  }
-
-  .div-card-company {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin-top: 30px;
-    height: 37%;
-    gap: 5%;
-  }
-
-  .card-company {
-    width: 18%;
-    padding: 10px;
-  }
-
-  .img-card-company {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-  }
-
-  .title-card-company {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-
-  .main-text-company {
-    font-size: 15px;
-    margin-top: 5px;
-  }
-}
-
 @media (max-height: 600px) {
   .navbar-info {
     flex-direction: column;
@@ -1949,9 +1943,14 @@ dialog {
   .main-company-text {
     font-size: 15px;
   }
+
+  .description-company-text {
+    font-size: 15px;
+  }
+
   .card-company {
     width: 200px;
-    height: 240px;
+    height: 210px;
     border-radius: 5%;
     padding: 10px;
     margin-bottom: 20px;
