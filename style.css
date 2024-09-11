@@ -590,6 +590,14 @@ body {
     font-size: 13px;
     margin-top: 5px;
   }
+
+  .text-info-main {
+    font-size: 13px;
+  }
+
+  .text-info-extra {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1328,6 +1336,10 @@ body {
     margin-bottom: 0px;
   }
 
+  .text-info-extra {
+    font-size: 10px;
+  }
+
   .info-company-text {
     font-size: 22px;
     margin-top: 25px;
@@ -1993,5 +2005,13 @@ body {
   .block-container {
     margin-top: 8px;
     gap: 25px;
+  }
+
+  .text-info-main {
+    font-size: 11px;
+  }
+
+  .text-info-extra {
+    font-size: 11px;
   }
 }
