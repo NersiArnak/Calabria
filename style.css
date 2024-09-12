@@ -1994,7 +1994,7 @@ body {
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 550px) {
   .navbar-info {
     flex-direction: column;
     height: auto;
@@ -2036,7 +2036,7 @@ body {
   }
 
   .products-background {
-    height: auto;
+    height: 110%;
   }
 
   .info-company-background {
