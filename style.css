@@ -1587,7 +1587,7 @@ body {
   }
 
   .products-background {
-    height: 100%;
+    height: auto;
   }
 
   .product-text {
@@ -1701,7 +1701,7 @@ body {
 
   .card-company {
     width: 32%;
-    height: 70%;
+    height: 68%;
     border-radius: 5%;
     padding: 10px;
   }
@@ -2075,5 +2075,37 @@ body {
 
   .text-info-extra {
     font-size: 9px;
+  }
+}
+
+@media (max-width: 370px) {
+  .cont-info {
+    width: 100%; /* Уменьшаем ширину на мобильных устройствах */
+    max-width: 80%; /* Ограничиваем максимальную ширину */
+    height: 35%;
+  }
+  .main-company-text {
+    font-size: 8px;
+  }
+  .description-company-text {
+    margin-top: 8px;
+    font-size: 8px;
+  }
+  .title-card-company {
+    font-size: 8px;
+    margin-top: 7px;
+  }
+
+  .main-text-company {
+    font-size: 7px;
+    margin-top: 2px;
+  }
+  .text-info-main {
+    font-size: 7px;
+    margin-bottom: 2px;
+  }
+
+  .text-info-extra {
+    font-size: 7px;
   }
 }
