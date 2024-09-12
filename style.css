@@ -1821,8 +1821,8 @@ body {
   }
 
   .navbar-categories {
-    height: auto; /* Автоматическая высота для мобильных устройств */
-    padding: 12px; /* Добавляем вертикальные отступы */
+    height: auto;
+    padding: 12px;
   }
 
   .block-categories {
@@ -1840,7 +1840,7 @@ body {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 35%;
+    height: 30%;
   }
 
   .text-info-calabria {
@@ -1942,6 +1942,7 @@ body {
 
   .main-company-text {
     font-size: 9px;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .img-company {
@@ -1952,6 +1953,7 @@ body {
   .description-company-text {
     margin-top: 10px;
     font-size: 9px;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .div-card-company {
@@ -1977,11 +1979,13 @@ body {
   .title-card-company {
     font-size: 8px;
     margin-top: 7px;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .main-text-company {
     font-size: 7px;
     margin-top: 2px;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .title-name-contacts {
