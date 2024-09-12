@@ -57,6 +57,7 @@ body {
 }
 
 .style-a {
+  font-family: "Times New Roman", Times, serif;
   margin-left: 5px;
   font-size: 18px;
   text-decoration: none;
@@ -1306,6 +1307,49 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-info {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .block-container {
+    margin-top: 10px;
+    gap: 25px;
+  }
+
+  .img-logo {
+    width: 140px;
+  }
+
+  .style-a {
+    font-size: 12px;
+  }
+
+  .img-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .navbar-categories {
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    padding: 14px; /* Добавляем вертикальные отступы */
+  }
+
+  .block-categories {
+    gap: 10px;
+  }
+
+  .style-a-categories {
+    font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+
+  .style-a-flag {
+    font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
+  }
+}
+
 @media (max-width: 720px) {
   .text-info-calabria {
     font-size: 34px;
@@ -1939,9 +1983,6 @@ body {
     flex-direction: column;
     height: auto;
     padding: 10px;
-  }
-  .navbar-info {
-    height: 15%;
   }
   .navbar-categories {
     height: 15%;
