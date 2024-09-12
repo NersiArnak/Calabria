@@ -1934,7 +1934,7 @@ body {
   }
 }
 
-/* @media (max-height: 600px) {
+@media (max-height: 600px) {
   .navbar-info {
     flex-direction: column;
     height: auto;
@@ -1995,7 +1995,7 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-} */
+}
 
 @media (max-height: 420px) {
   .navbar-info {
