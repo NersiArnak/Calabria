@@ -1840,15 +1840,19 @@ body {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 25%;
+    height: 35%;
   }
 
   .text-info-calabria {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .text-info-small {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .btn-cont-info {
+    font-size: 10p;
   }
 
   .products-background {
@@ -1861,8 +1865,8 @@ body {
   }
 
   .product-text-additional {
-    font-size: 12px; /* Задайте желаемый размер шрифта */
-    margin-top: 2px;
+    font-size: 11px;
+    margin-top: 0px;
   }
 
   .div-cards {
@@ -1894,29 +1898,54 @@ body {
   }
 
   .pr-text-main {
-    font-size: 16px; /* Уменьшаем размер шрифта заголовка */
+    font-size: 14px; /* Уменьшаем размер шрифта заголовка */
   }
 
   .pr-text-description {
-    font-size: 10px; /* Уменьшаем размер шрифта описания */
+    font-size: 8px; /* Уменьшаем размер шрифта описания */
   }
 
   .parametr-img {
-    width: 120px; /* Уменьшаем размер изображения */
-    height: 100px;
+    width: 100px; /* Уменьшаем размер изображения */
+    height: 80px;
   }
 
   .text-price-img {
-    font-size: 10px;
+    font-size: 8px;
+  }
+
+  .button-characteristic {
+    width: 100px;
+    height: 25px;
+    font-size: 8px;
+    margin-bottom: 6px;
   }
 
   .extra-text {
-    font-size: 12px; /* Уменьшаем размер шрифта дополнительного текста */
-    margin-top: 8px; /* Уменьшаем верхний отступ */
+    font-size: 12px;
+    margin-top: 8px;
   }
   .product-text-additional-end {
-    font-size: 12px;
-    margin-top: 18px;
+    font-size: 9px;
+    margin-top: 15px;
+  }
+
+  .info-company-background {
+    height: 100%;
+  }
+
+  .main-company-text {
+    font-size: 9px;
+  }
+
+  .img-company {
+    width: 65px;
+    height: 65px;
+  }
+
+  .description-company-text {
+    margin-top: 10px;
+    font-size: 9px;
   }
 
   .div-card-company {
@@ -1940,12 +1969,12 @@ body {
   }
 
   .title-card-company {
-    font-size: 9px;
+    font-size: 8px;
     margin-top: 7px;
   }
 
   .main-text-company {
-    font-size: 8px;
+    font-size: 7px;
     margin-top: 2px;
   }
 
@@ -2056,6 +2085,10 @@ body {
     font-size: 10px;
   }
 
+  .main-text-map {
+    font-size: 10px;
+  }
+
   .text-map-extra {
     font-size: 11px;
     margin-top: 8px;
@@ -2079,6 +2112,10 @@ body {
   }
 
   .text-info-extra {
+    font-size: 9px;
+  }
+
+  .main-text-map {
     font-size: 9px;
   }
 }
