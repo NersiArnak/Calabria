@@ -1587,7 +1587,7 @@ body {
   }
 
   .products-background {
-    height: auto;
+    height: 115%;
   }
 
   .product-text {
@@ -2036,7 +2036,7 @@ body {
   }
 
   .products-background {
-    height: 110%;
+    height: auto;
   }
 
   .info-company-background {
