@@ -112,6 +112,7 @@ body {
 }
 
 .div-text-main {
+  font-family: "Times New Roman", Times, serif;
   width: 100%;
   height: auto;
   display: flex;
@@ -128,6 +129,7 @@ body {
 }
 
 .text-description {
+  font-family: "Times New Roman", Times, serif;
   margin-top: 20px;
   font-size: 18px;
 }

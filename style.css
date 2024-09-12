@@ -127,11 +127,13 @@ body {
 }
 
 .text-info-calabria {
+  font-family: "Times New Roman", Times, serif;
   font-size: 45px;
   color: white;
 }
 
 .text-info-small {
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   margin-top: 1%;
   font-size: 23px;
@@ -139,6 +141,7 @@ body {
 }
 
 .btn-cont-info {
+  font-family: "Times New Roman", Times, serif;
   width: 25%;
   margin-top: 3%;
   height: auto;
@@ -170,12 +173,14 @@ body {
 }
 
 .product-text {
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 8px;
 }
 
 .product-text-additional {
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
 }
 
@@ -264,6 +269,7 @@ body {
 }
 
 .product-text-additional-end {
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   text-align: center;
   margin-top: 40px;
@@ -284,6 +290,7 @@ body {
 }
 
 .info-company-text {
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   margin-top: 30px;
   color: white;
@@ -396,6 +403,7 @@ body {
 }
 
 .title-name-contacts {
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -432,6 +440,7 @@ body {
 }
 
 .text-info-main {
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -439,6 +448,7 @@ body {
 }
 
 .text-info-extra {
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   margin-bottom: 5px;
   text-decoration: none;
@@ -462,6 +472,7 @@ body {
 }
 
 .main-text-map {
+  font-family: "Times New Roman", Times, serif;
   color: white;
   font-size: 22px;
   margin-top: 30px;
@@ -475,6 +486,7 @@ body {
 }
 
 .text-map-extra {
+  font-family: "Times New Roman", Times, serif;
   color: rgb(205, 205, 205);
   font-size: 15px;
   margin-top: 5px;
@@ -598,11 +610,11 @@ body {
   }
 
   .text-info-main {
-    font-size: 10px;
+    font-size: 25px;
   }
 
   .text-info-extra {
-    font-size: 10px;
+    font-size: 18px;
   }
 }
 
