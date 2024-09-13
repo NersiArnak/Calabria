@@ -1935,6 +1935,7 @@ body {
   }
 
   .div-text-company {
+    width: 110%;
     height: auto;
     display: flex;
     justify-content: center;
