@@ -2142,23 +2142,27 @@ body {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 35%;
+    height: 30%;
+  }
+
+  .div-text-company {
+    width: 110%;
   }
   .main-company-text {
-    font-size: 8px;
+    font-size: 7px;
   }
   .description-company-text {
     margin-top: 8px;
-    font-size: 8px;
+    font-size: 7px;
   }
   .title-card-company {
-    font-size: 8px;
+    font-size: 7px;
     margin-top: 7px;
   }
 
   .main-text-company {
-    font-size: 7px;
-    margin-top: 2px;
+    font-size: 6px;
+    margin-top: 5px;
   }
   .text-info-main {
     font-size: 7px;
