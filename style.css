@@ -502,11 +502,7 @@ body {
   margin-bottom: 40px;
 }
 
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-dialog {
+.dialog {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -517,6 +513,10 @@ dialog {
   border: none;
   outline: none;
   width: 70%;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title-name-dialog {
@@ -531,28 +531,106 @@ dialog {
   color: rgb(78, 78, 78);
 }
 
-.backCall {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: chocolate;
-}
-
 body {
   font-family: Arial, sans-serif;
 }
 
 .fixed-element {
+  width: 155px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  bottom: 20px; /* Отступ от нижней границы окна */
-  right: 20px; /* Отступ от правой границы окна */
-  background-color: #4caf50; /* Цвет фона */
-  color: white; /* Цвет текста */
-  padding: 10px 20px; /* Внутренние отступы */
-  border-radius: 5px; /* Скругленные углы */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  bottom: 20px;
+  right: 20px;
+  /* background-color: rgba(1, 1, 1, 0.7); */
+  background-color: rgba(198, 194, 194, 0.8);
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: none;
+  gap: 5px;
+}
+
+.fixed-element:hover {
+  font-size: 14.5px;
+  background-color: rgba(168, 167, 167, 0.8);
+}
+
+.img-phone {
+  width: 16px;
+  height: 16px;
+}
+
+.dialog-call {
+  width: 33%;
+  position: fixed;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1%;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.dialog-call::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.class-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-back-call {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.input {
+  width: 180px;
+  height: 20px;
+}
+
+.results-send-data {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 25px;
+  border: 0;
+  background-color: rgb(87, 117, 85);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn-call:hover {
+  background-color: rgb(66, 88, 64);
+  font-size: 15px;
 }
 
 @media (max-height: 700px) {
@@ -1081,6 +1159,13 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .dialog-call {
+    width: 50%;
+    padding: 1.5%;
+  }
+}
+
 @media (max-width: 820px) {
   .navbar-info {
     flex-direction: column;
@@ -1468,6 +1553,42 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .fixed-element {
+    width: 125px;
+    height: 35px;
+    font-size: 12px;
+    gap: 3px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .fixed-element:hover {
+    font-size: 12.5px;
+  }
+
+  .img-phone {
+    width: 14px;
+    height: 14px;
+  }
+
+  .dialog-call {
+    width: 50%;
+    padding: 1.5%;
+  }
+
+  .title-back-call {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+}
+
 @media (max-width: 550px) {
   .info-company-text {
     font-size: 22px;
@@ -1795,7 +1916,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .navbar-info {
     flex-direction: column;
     height: auto;

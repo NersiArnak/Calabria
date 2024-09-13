@@ -99,7 +99,7 @@
           >
             Характеристики
           </button>
-          <dialog id="description-dialog1">
+          <dialog class="dialog" id="description-dialog1">
             <p class="title-name-dialog">Standart</p>
 
             <p class="description-name-dialog">
@@ -119,7 +119,7 @@
             </p>
           </dialog>
 
-          <dialog id="characteristics-dialog1">
+          <dialog class="dialog" id="characteristics-dialog1">
             <p class="title-name-dialog">Standart</p>
             <p class="description-name-dialog">Основные размеры балки БДК 1:</p>
             <p class="description-name-dialog">- длина, мм - 1500 – 6000</p>
@@ -202,7 +202,7 @@
           >
             Характеристики
           </button>
-          <dialog id="description-dialog2">
+          <dialog class="dialog" id="description-dialog2">
             <p class="title-name-dialog">Standart Plus</p>
             <p class="description-name-dialog">
               Standart Plus - это балки со стенками из фанеры ФСФ толщиной 24
@@ -224,7 +224,7 @@
             </p>
           </dialog>
 
-          <dialog id="characteristics-dialog2">
+          <dialog class="dialog" id="characteristics-dialog2">
             <p class="title-name-dialog">Standart Plus</p>
             <p class="description-name-dialog">Основные размеры балки БДК 1:</p>
             <p class="description-name-dialog">- длина, мм - 1500 – 6000</p>
@@ -307,7 +307,7 @@
           >
             Характеристики
           </button>
-          <dialog id="description-dialog3">
+          <dialog class="dialog" id="description-dialog3">
             <p class="title-name-dialog">Prime</p>
             <p class="description-name-dialog">
               Prime - представляет собой балку со стенками из фанеры ФСФ
@@ -334,7 +334,7 @@
             </p>
           </dialog>
 
-          <dialog id="characteristics-dialog3">
+          <dialog class="dialog" id="characteristics-dialog3">
             <p class="title-name-dialog">Prime</p>
             <p class="description-name-dialog">Основные размеры балки БДК 1:</p>
             <p class="description-name-dialog">- длина, мм - 1500 – 6000</p>
@@ -521,128 +521,153 @@
         </p>
       </div>
 
-      <script type="text/javascript">
-        ymaps.ready(init);
+      <a id="back-call" class="fixed-element"
+        >Обратный звонок <img class="img-phone" src="img/phone.png" alt="" />
+      </a>
+      <dialog class="dialog-call" id="dialog-back-call">
+        <p class="title-back-call">Форма обратного звонка</p>
+        <div class="class-form">
+          <form id="callbackForm">
+            <label for="fullName">ФИО:</label><br />
+            <input
+              class="input"
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+            /><br />
+            <br />
+            <label for="phoneNumber">Номер телефона:</label><br />
+            <input
+              class="input"
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              required
+            /><br /><br />
 
-        function init() {
-          var myMap = new ymaps.Map("map", {
-            center: [59.158151, 37.934534], // Координаты центра карты (например, Москва)
-            zoom: 10, // Масштаб карты
-          });
-
-          var myPlacemark = new ymaps.Placemark([59.158151, 37.934534], {
-            hintContent: "Москва!",
-            balloonContent: "Столица России",
-          });
-
-          myMap.geoObjects.add(myPlacemark);
-        }
-        document
-          .getElementById("description-calabria-standart1")
-          .addEventListener("click", function () {
-            document.getElementById("description-dialog1").showModal();
-          });
-
-        document
-          .getElementById("characteristics-calabria-standart1")
-          .addEventListener("click", function () {
-            document.getElementById("characteristics-dialog1").showModal();
-          });
-
-        document
-          .getElementById("description-calabria-standart2")
-          .addEventListener("click", function () {
-            document.getElementById("description-dialog2").showModal();
-          });
-
-        document
-          .getElementById("characteristics-calabria-standart2")
-          .addEventListener("click", function () {
-            document.getElementById("characteristics-dialog2").showModal();
-          });
-
-        document
-          .getElementById("description-calabria-standart3")
-          .addEventListener("click", function () {
-            document.getElementById("description-dialog3").showModal();
-          });
-
-        document
-          .getElementById("characteristics-calabria-standart3")
-          .addEventListener("click", function () {
-            document.getElementById("characteristics-dialog3").showModal();
-          });
-
-        document.querySelectorAll("dialog").forEach((dialog) => {
-          dialog.addEventListener("click", function (event) {
-            const rect = this.getBoundingClientRect();
-            const isInDialog =
-              rect.top <= event.clientY &&
-              event.clientY <= rect.top + rect.height &&
-              rect.left <= event.clientX &&
-              event.clientX <= rect.left + rect.width;
-            if (!isInDialog) {
-              this.close();
-            }
-          });
-        });
-      </script>
+            <label for="callTime">Удобное время для звонка:</label><br />
+            <input
+              class="input"
+              type="text"
+              id="callTime"
+              name="callTime"
+              required
+            /><br /><br />
+            <input class="btn-call" type="submit" value="Отправить" />
+          </form>
+          <p class="results-send-data" id="responseMessage"></p>
+        </div>
+      </dialog>
     </div>
 
-    <!-- <div class="backCall">
-      <h1>Форма обратного звонка</h1>
-      <form id="callbackForm">
-        <label for="fullName">ФИО:</label><br />
-        <input type="text" id="fullName" name="fullName" required /><br /><br />
+    <script type="text/javascript">
+      ymaps.ready(init);
 
-        <label for="phoneNumber">Номер телефона:</label><br />
-        <input
-          type="tel"
-          id="phoneNumber"
-          name="phoneNumber"
-          required
-        /><br /><br />
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [59.158151, 37.934534], // Координаты центра карты (например, Москва)
+          zoom: 10, // Масштаб карты
+        });
 
-        <label for="callTime">Удобное время для звонка:</label><br />
-        <input type="text" id="callTime" name="callTime" required /><br /><br />
+        var myPlacemark = new ymaps.Placemark([59.158151, 37.934534], {
+          hintContent: "Москва!",
+          balloonContent: "Столица России",
+        });
 
-        <input type="submit" value="Отправить" />
-      </form>
-      <p id="responseMessage"></p>
+        myMap.geoObjects.add(myPlacemark);
+      }
+      document
+        .getElementById("description-calabria-standart1")
+        .addEventListener("click", function () {
+          document.getElementById("description-dialog1").showModal();
+        });
 
-      <div class="fixed-element">Обратный звонок</div>
-      <script>
-        document
-          .getElementById("callbackForm")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
+      document
+        .getElementById("characteristics-calabria-standart1")
+        .addEventListener("click", function () {
+          document.getElementById("characteristics-dialog1").showModal();
+        });
 
-            var formData = {
-              fullName: document.getElementById("fullName").value,
-              phoneNumber: document.getElementById("phoneNumber").value,
-              callTime: document.getElementById("callTime").value,
-            };
+      document
+        .getElementById("description-calabria-standart2")
+        .addEventListener("click", function () {
+          document.getElementById("description-dialog2").showModal();
+        });
 
-            fetch(
-              "https://script.google.com/macros/s/AKfycbz3_ylqrOoZY25zBUUoAUExljr1Rk6wJv29Oh9pX5x1fku2bJY-pJFGHma3csWy8pOCzQ/exec",
-              {
-                method: "POST",
-                body: JSON.stringify(formData),
-              }
-            )
-              .then((response) => response.json())
-              .then((data) => {
-                document.getElementById("responseMessage").innerText =
-                  "Данные успешно отправлены!";
-                document.getElementById("callbackForm").reset();
-              })
-              .catch((error) => {
-                document.getElementById("responseMessage").innerText =
-                  "Ошибка отправки данных!";
-                console.error("Error:", error);
-              });
-          });
-      </script>
-    </div> -->
+      document
+        .getElementById("characteristics-calabria-standart2")
+        .addEventListener("click", function () {
+          document.getElementById("characteristics-dialog2").showModal();
+        });
+
+      document
+        .getElementById("description-calabria-standart3")
+        .addEventListener("click", function () {
+          document.getElementById("description-dialog3").showModal();
+        });
+
+      document
+        .getElementById("characteristics-calabria-standart3")
+        .addEventListener("click", function () {
+          document.getElementById("characteristics-dialog3").showModal();
+        });
+
+      document
+        .getElementById("back-call")
+        .addEventListener("click", function () {
+          document.getElementById("dialog-back-call").showModal();
+        });
+
+      document.querySelectorAll("dialog").forEach((dialog) => {
+        dialog.addEventListener("click", function (event) {
+          const rect = this.getBoundingClientRect();
+          const isInDialog =
+            rect.top <= event.clientY &&
+            event.clientY <= rect.top + rect.height &&
+            rect.left <= event.clientX &&
+            event.clientX <= rect.left + rect.width;
+          if (!isInDialog) {
+            this.close();
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document
+        .getElementById("callbackForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var formData = {
+            fullName: document.getElementById("fullName").value,
+            phoneNumber: document.getElementById("phoneNumber").value,
+            callTime: document.getElementById("callTime").value,
+          };
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbz3_ylqrOoZY25zBUUoAUExljr1Rk6wJv29Oh9pX5x1fku2bJY-pJFGHma3csWy8pOCzQ/exec",
+            {
+              method: "POST",
+              body: JSON.stringify(formData),
+            }
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              // document.getElementById("responseMessage").innerText =
+              //   "Заявка отправлена!";
+              document.getElementById("dialog-back-call").close();
+              document.getElementById("responseMessage").reset();
+              document.getElementById("callbackForm").reset();
+              console.data(data);
+            })
+            .catch((error) => {
+              // document.getElementById("responseMessage").innerText =
+              //   "Ошибка отправки заявки!";
+              console.error("Error:", error);
+            });
+        });
+    </script>
   </body>
 </html>
