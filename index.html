@@ -657,9 +657,10 @@
             .then((data) => {
               // document.getElementById("responseMessage").innerText =
               //   "Заявка отправлена!";
-              document.getElementById("dialog-back-call").close();
-              document.getElementById("responseMessage").reset();
               document.getElementById("callbackForm").reset();
+              document.getElementById("dialog-back-call").close();
+              // document.getElementById("responseMessage").reset();
+
               console.data(data);
             })
             .catch((error) => {
