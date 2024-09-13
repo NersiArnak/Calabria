@@ -1650,6 +1650,40 @@ label {
     font-size: 9px;
     margin-top: 7px;
   }
+
+  .fixed-element {
+    width: 125px;
+    height: 35px;
+    font-size: 12px;
+    gap: 3px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .fixed-element:hover {
+    font-size: 12.5px;
+  }
+
+  .img-phone {
+    width: 14px;
+    height: 14px;
+  }
+
+  .dialog-call {
+    width: 50%;
+    padding: 1.5%;
+  }
+
+  .title-back-call {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 499px) {
@@ -1914,6 +1948,19 @@ label {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: rgb(78, 78, 78);
   }
+  .title-back-call {
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .btn-call {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2158,6 +2205,69 @@ label {
     margin-top: 5px;
     margin-bottom: 20px;
   }
+  .title-back-call {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  .btn-call {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 370px) {
+  .cont-info {
+    width: 100%; /* Уменьшаем ширину на мобильных устройствах */
+    max-width: 80%; /* Ограничиваем максимальную ширину */
+    height: 30%;
+  }
+
+  .div-text-company {
+    width: 110%;
+  }
+  .main-company-text {
+    font-size: 7px;
+  }
+  .description-company-text {
+    margin-top: 8px;
+    font-size: 7px;
+  }
+  .title-card-company {
+    font-size: 7px;
+    margin-top: 7px;
+  }
+
+  .main-text-company {
+    font-size: 6px;
+    margin-top: 5px;
+  }
+  .text-info-main {
+    font-size: 7px;
+    margin-bottom: 2px;
+  }
+
+  .text-info-extra {
+    font-size: 7px;
+  }
+
+  .title-back-call {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .btn-call {
+    font-size: 11px;
+  }
 }
 
 @media (max-height: 550px) {
@@ -2257,41 +2367,5 @@ label {
     font-size: 8px;
     margin-top: 8px;
     margin-bottom: 8px;
-  }
-}
-
-@media (max-width: 370px) {
-  .cont-info {
-    width: 100%; /* Уменьшаем ширину на мобильных устройствах */
-    max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 30%;
-  }
-
-  .div-text-company {
-    width: 110%;
-  }
-  .main-company-text {
-    font-size: 7px;
-  }
-  .description-company-text {
-    margin-top: 8px;
-    font-size: 7px;
-  }
-  .title-card-company {
-    font-size: 7px;
-    margin-top: 7px;
-  }
-
-  .main-text-company {
-    font-size: 6px;
-    margin-top: 5px;
-  }
-  .text-info-main {
-    font-size: 7px;
-    margin-bottom: 2px;
-  }
-
-  .text-info-extra {
-    font-size: 7px;
   }
 }
