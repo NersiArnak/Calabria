@@ -1559,8 +1559,8 @@ label {
     height: 35px;
     font-size: 12px;
     gap: 3px;
-    bottom: 15px;
-    right: 15px;
+    bottom: 20px;
+    right: 20px;
   }
 
   .fixed-element:hover {
@@ -1656,8 +1656,8 @@ label {
     height: 35px;
     font-size: 12px;
     gap: 3px;
-    bottom: 15px;
-    right: 15px;
+    bottom: 20px;
+    right: 20px;
   }
 
   .fixed-element:hover {
