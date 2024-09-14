@@ -633,6 +633,12 @@ label {
   font-size: 15px;
 }
 
+.loading {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media (max-height: 700px) {
   .div-company-text {
     margin-top: 20px;
@@ -1587,6 +1593,9 @@ label {
     font-size: 13px;
     margin-bottom: 8px;
   }
+  .loading {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1683,6 +1692,9 @@ label {
   label {
     font-size: 13px;
     margin-bottom: 8px;
+  }
+  .loading {
+    font-size: 13px;
   }
 }
 
@@ -1961,6 +1973,9 @@ label {
   .btn-call {
     font-size: 13px;
   }
+  .loading {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2218,6 +2233,9 @@ label {
   .btn-call {
     font-size: 11px;
   }
+  .loading {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -2266,6 +2284,9 @@ label {
     margin-bottom: 8px;
   }
   .btn-call {
+    font-size: 10px;
+  }
+  .loading {
     font-size: 10px;
   }
 }

@@ -558,6 +558,9 @@
           </form>
           <p class="results-send-data" id="responseMessage"></p>
         </div>
+        <div id="loadingIndicator" class="loading" style="display: none">
+          Загрузка...
+        </div>
       </dialog>
     </div>
 
@@ -640,6 +643,9 @@
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
+          // Показать индикатор загрузки
+          document.getElementById("loadingIndicator").style.display = "block";
+
           var formData = {
             fullName: document.getElementById("fullName").value,
             phoneNumber: document.getElementById("phoneNumber").value,
@@ -655,17 +661,21 @@
           )
             .then((response) => response.json())
             .then((data) => {
-              // document.getElementById("responseMessage").innerText =
-              //   "Заявка отправлена!";
+              // Скрыть индикатор загрузки
+              document.getElementById("loadingIndicator").style.display =
+                "none";
+
+              // Очистить форму
               document.getElementById("callbackForm").reset();
               document.getElementById("dialog-back-call").close();
-              // document.getElementById("responseMessage").reset();
-
-              console.data(data);
+              console.log(data);
             })
             .catch((error) => {
-              // document.getElementById("responseMessage").innerText =
-              //   "Ошибка отправки заявки!";
+              // Скрыть индикатор загрузки
+              document.getElementById("loadingIndicator").style.display =
+                "none";
+
+              // Обработка ошибки
               console.error("Error:", error);
             });
         });
