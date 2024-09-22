@@ -549,13 +549,14 @@
             /><br /><br />
 
             <label for="callTime">Удобное время для связи:</label><br />
-            <input
+            <select
               class="input"
-              type="text"
               id="callTime"
               name="callTime"
               required
-            /><br /><br />
+            ></select
+            ><br /><br />
+
             <input class="btn-call" type="submit" value="Отправить" />
           </form>
           <p class="results-send-data" id="responseMessage"></p>
@@ -681,6 +682,64 @@
               console.error("Error:", error);
             });
         });
+    </script>
+    <script type="text/javascript">
+      function padNumber(number) {
+        return number < 10 ? "0" + number : number;
+      }
+
+      function generateTimeOptions() {
+        const select = document.getElementById("callTime");
+        const currentTime = new Date();
+
+        // Установим минимальные и максимальные границы для времени
+        const startHour = 7;
+        const endHour = 23;
+        const endMinute = 30;
+
+        // Найти ближайший 30-минутный интервал
+        let minutes = currentTime.getMinutes();
+        minutes = minutes <= 30 ? 30 : 0;
+
+        if (minutes === 0) {
+          currentTime.setHours(currentTime.getHours() + 1);
+        }
+        currentTime.setMinutes(minutes, 0, 0);
+
+        // Если текущее время меньше 7:00, начать с 7:00
+        if (currentTime.getHours() < startHour) {
+          currentTime.setHours(startHour);
+          currentTime.setMinutes(0);
+        }
+
+        // Создаем опции для времени от текущего момента до 23:30
+        while (
+          currentTime.getHours() < endHour ||
+          (currentTime.getHours() === endHour &&
+            currentTime.getMinutes() <= endMinute)
+        ) {
+          const hours = currentTime.getHours();
+          const mins = padNumber(currentTime.getMinutes());
+          const timeOption = `${padNumber(hours)}:${mins}`;
+
+          const option = document.createElement("option");
+          option.value = timeOption;
+          option.textContent = timeOption;
+          select.appendChild(option);
+
+          // Увеличиваем время на 30 минут
+          currentTime.setMinutes(currentTime.getMinutes() + 30);
+
+          // Если минуты перешли за 60, увеличиваем час и сбрасываем минуты
+          if (currentTime.getMinutes() >= 60) {
+            currentTime.setHours(currentTime.getHours() + 1);
+            currentTime.setMinutes(0);
+          }
+        }
+      }
+
+      // Генерация опций при загрузке страницы
+      window.onload = generateTimeOptions;
     </script>
   </body>
 </html>
