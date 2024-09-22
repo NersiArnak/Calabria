@@ -684,62 +684,44 @@
         });
     </script>
     <script type="text/javascript">
-      function padNumber(number) {
-        return number < 10 ? "0" + number : number;
-      }
-
-      function generateTimeOptions() {
+      document.addEventListener("DOMContentLoaded", function () {
         const select = document.getElementById("callTime");
-        const currentTime = new Date();
+        const startTime = new Date();
+        const moscowOffset = 3 * 60; // Смещение для московского времени в минутах
+        const currentTime = new Date(
+          startTime.getTime() + moscowOffset * 60 * 1000
+        );
 
-        // Установим минимальные и максимальные границы для времени
+        // Устанавливаем время начала в 7:00
         const startHour = 7;
-        const endHour = 23;
-        const endMinute = 30;
+        const endHour = 22; // Максимальное время 22:00
+        const interval = 30; // минут
 
-        // Найти ближайший 30-минутный интервал
-        let minutes = currentTime.getMinutes();
-        minutes = minutes <= 30 ? 30 : 0;
+        // Устанавливаем начальное время
+        const firstTime = new Date(currentTime);
+        firstTime.setMinutes(
+          Math.ceil(firstTime.getMinutes() / interval) * interval
+        );
 
-        if (minutes === 0) {
-          currentTime.setHours(currentTime.getHours() + 1);
-        }
-        currentTime.setMinutes(minutes, 0, 0);
-
-        // Если текущее время меньше 7:00, начать с 7:00
-        if (currentTime.getHours() < startHour) {
-          currentTime.setHours(startHour);
-          currentTime.setMinutes(0);
+        // Проверяем, если текущее время меньше 7:00, устанавливаем с 7:00
+        if (firstTime.getHours() < startHour) {
+          firstTime.setHours(startHour, 0);
         }
 
-        // Создаем опции для времени от текущего момента до 23:30
-        while (
-          currentTime.getHours() < endHour ||
-          (currentTime.getHours() === endHour &&
-            currentTime.getMinutes() <= endMinute)
+        // Генерируем опции времени
+        for (
+          let time = firstTime;
+          time.getHours() < endHour + 1;
+          time.setMinutes(time.getMinutes() + interval)
         ) {
-          const hours = currentTime.getHours();
-          const mins = padNumber(currentTime.getMinutes());
-          const timeOption = `${padNumber(hours)}:${mins}`;
-
+          if (time.getHours() === endHour && time.getMinutes() === 30) continue; // Пропускаем 22:30
           const option = document.createElement("option");
-          option.value = timeOption;
-          option.textContent = timeOption;
+          const formattedTime = time.toTimeString().slice(0, 5); // Формат HH:mm
+          option.value = formattedTime;
+          option.textContent = formattedTime;
           select.appendChild(option);
-
-          // Увеличиваем время на 30 минут
-          currentTime.setMinutes(currentTime.getMinutes() + 30);
-
-          // Если минуты перешли за 60, увеличиваем час и сбрасываем минуты
-          if (currentTime.getMinutes() >= 60) {
-            currentTime.setHours(currentTime.getHours() + 1);
-            currentTime.setMinutes(0);
-          }
         }
-      }
-
-      // Генерация опций при загрузке страницы
-      window.onload = generateTimeOptions;
+      });
     </script>
   </body>
 </html>
