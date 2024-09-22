@@ -565,9 +565,10 @@ body {
 }
 
 .dialog-call {
-  width: 33%;
-  position: fixed;
-  position: fixed;
+  width: 450px;
+  height: 310px;
+  /* position: fixed;
+  position: fixed; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -591,9 +592,10 @@ body {
 
 .title-back-call {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 label {
@@ -1166,10 +1168,10 @@ label {
 }
 
 @media (max-width: 900px) {
-  .dialog-call {
+  /* .dialog-call {
     width: 50%;
     padding: 1.5%;
-  }
+  } */
 }
 
 @media (max-width: 820px) {
@@ -1417,6 +1419,17 @@ label {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: rgb(78, 78, 78);
   }
+  .dialog-call {
+    width: 350px;
+    height: 290px;
+    padding: 1.5%;
+  }
+
+  .title-back-call {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1579,14 +1592,14 @@ label {
   }
 
   .dialog-call {
-    width: 50%;
-    padding: 1.5%;
+    /* width: 50%;
+    padding: 1.5%; */
   }
 
   .title-back-call {
-    font-size: 20px;
+    /* font-size: 15px;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
   }
 
   label {
@@ -1679,14 +1692,14 @@ label {
   }
 
   .dialog-call {
-    width: 50%;
-    padding: 1.5%;
+    /* width: 50%;
+    padding: 1.5%; */
   }
 
   .title-back-call {
-    font-size: 20px;
+    /* font-size: 15px;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
   }
 
   label {
@@ -1961,7 +1974,7 @@ label {
     color: rgb(78, 78, 78);
   }
   .title-back-call {
-    font-size: 17px;
+    font-size: 14px;
     margin-top: 8px;
     margin-bottom: 8px;
   }
@@ -2221,7 +2234,7 @@ label {
     margin-bottom: 20px;
   }
   .title-back-call {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 8px;
     margin-bottom: 8px;
   }
@@ -2274,7 +2287,7 @@ label {
   }
 
   .title-back-call {
-    font-size: 15px;
+    font-size: 11px;
     margin-top: 8px;
     margin-bottom: 8px;
   }
