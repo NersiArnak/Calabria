@@ -641,6 +641,23 @@ label {
   font-family: "Times New Roman", Times, serif;
 }
 
+select {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Скругленные углы */
+  padding: 8px; /* Внутренние отступы */
+}
+
+select::-ms-expand {
+  display: none; /* Убираем стандартную стрелку в IE */
+}
+
+/* Дополнительный стиль для кроссбраузерной совместимости */
+select:focus {
+  outline: none; /* Убираем обводку при фокусе */
+  border-color: #66afe9; /* Цвет обводки при фокусе */
+}
+
 @media (max-height: 700px) {
   .div-company-text {
     margin-top: 20px;
