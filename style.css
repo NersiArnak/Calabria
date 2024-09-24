@@ -1692,14 +1692,14 @@ select:focus {
   .fixed-element {
     width: 125px;
     height: 35px;
-    font-size: 10px;
+    font-size: 12px;
     gap: 3px;
     bottom: 35px;
     right: 15px;
   }
 
   .fixed-element:hover {
-    font-size: 10.5px;
+    font-size: 12.5px;
   }
 
   .img-phone {
@@ -2255,6 +2255,14 @@ select:focus {
     font-size: 12px;
     margin-top: 8px;
     margin-bottom: 8px;
+  }
+
+  .fixed-element {
+    font-size: 10px;
+  }
+
+  .fixed-element:hover {
+    font-size: 10.5px;
   }
 
   label {
