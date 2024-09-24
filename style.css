@@ -2258,9 +2258,9 @@ select:focus {
   }
 
   .fixed-element {
-    font-size: 10px;
-    width: 115px;
-    height: 30px;
+    font-size: 11px;
+    width: 125px;
+    height: 32px;
   }
 
   .fixed-element:hover {
