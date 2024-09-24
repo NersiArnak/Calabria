@@ -542,7 +542,7 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  font-size: 12px;
+  font-size: 14px;
   bottom: 20px;
   right: 20px;
   /* background-color: rgba(1, 1, 1, 0.7); */
@@ -555,7 +555,7 @@ body {
 }
 
 .fixed-element:hover {
-  font-size: 12.5px;
+  font-size: 14.5px;
   background-color: rgba(168, 167, 167, 0.8);
 }
 
@@ -1692,14 +1692,14 @@ select:focus {
   .fixed-element {
     width: 125px;
     height: 35px;
-    font-size: 12px;
+    font-size: 10px;
     gap: 3px;
     bottom: 35px;
     right: 15px;
   }
 
   .fixed-element:hover {
-    font-size: 12.5px;
+    font-size: 10.5px;
   }
 
   .img-phone {
@@ -1974,14 +1974,6 @@ select:focus {
     margin-bottom: 20px;
   }
 
-  .fixed-element {
-    font-size: 12px;
-  }
-
-  .fixed-element:hover {
-    font-size: 12.5px;
-  }
-
   dialog {
     width: 70%;
     padding: 12px;
@@ -2060,7 +2052,8 @@ select:focus {
   .cont-info {
     width: 100%; /* Уменьшаем ширину на мобильных устройствах */
     max-width: 80%; /* Ограничиваем максимальную ширину */
-    height: 30%;
+    /* height: 30%; */
+    height: 27%;
   }
 
   .text-info-calabria {
@@ -2186,7 +2179,8 @@ select:focus {
 
   .card-company {
     width: 32%;
-    height: 70%;
+    /* height: 70%; */
+    height: 55%;
     border-radius: 5%;
     padding: 10px;
   }
@@ -2252,14 +2246,6 @@ select:focus {
     margin-bottom: 0px;
   }
 
-  .fixed-element {
-    font-size: 12px;
-  }
-
-  .fixed-element:hover {
-    font-size: 12.5px;
-  }
-
   .text-map-extra {
     font-size: 8px;
     margin-top: 5px;
@@ -2322,14 +2308,6 @@ select:focus {
     font-size: 11px;
     margin-top: 8px;
     margin-bottom: 8px;
-  }
-
-  .fixed-element {
-    font-size: 11px;
-  }
-
-  .fixed-element:hover {
-    font-size: 11.5px;
   }
 
   label {
@@ -2411,13 +2389,6 @@ select:focus {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  .fixed-element {
-    font-size: 12px;
-  }
-
-  .fixed-element:hover {
-    font-size: 12.5px;
-  }
 }
 
 @media (max-height: 420px) {
@@ -2448,13 +2419,5 @@ select:focus {
     font-size: 8px;
     margin-top: 8px;
     margin-bottom: 8px;
-  }
-
-  .fixed-element {
-    font-size: 12px;
-  }
-
-  .fixed-element:hover {
-    font-size: 12.5px;
   }
 }
